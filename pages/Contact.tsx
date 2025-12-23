@@ -19,7 +19,14 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    let value = e.target.value;
+
+    // Enforce max 12 guests
+    if (e.target.name === 'guests' && parseInt(value) > 12) {
+      value = '12';
+    }
+
+    setFormData({ ...formData, [e.target.name]: value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
