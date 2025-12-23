@@ -10,12 +10,12 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    { src: "https://picsum.photos/seed/boat1/800/600" },
-    { src: "https://picsum.photos/seed/bay1/800/800" },
-    { src: "https://picsum.photos/seed/dolphin1/800/600" },
-    { src: "https://picsum.photos/seed/sunset2/800/500" },
-    { src: "https://picsum.photos/seed/underwater/800/600" },
-    { src: "https://picsum.photos/seed/ilovik/800/600" },
+    { src: "/gallery/tour-1.webp" },
+    { src: "/gallery/tour-7.webp" },
+    { src: "/gallery/tour-3.webp" },
+    { src: "/gallery/tour-4.webp" },
+    { src: "/gallery/tour-5.webp" },
+    { src: "/gallery/tour-6.webp" },
   ];
 
   // Split images for left and right sides
