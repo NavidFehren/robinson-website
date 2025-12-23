@@ -1,6 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
-import { Users, Anchor, Heart, Fish, ArrowRight, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface HomeProps {
   content: Content['home'];
@@ -45,58 +45,42 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
 
       </section>
 
-      {/* USP Section - "Experience the Ocean" Style */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            
-            {/* Image Side */}
-            <div className="lg:w-1/2 relative">
-                <div className="absolute -top-10 -left-10 w-40 h-40 bg-sand-100 rounded-full opacity-50 blur-3xl"></div>
-                <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-sea-100 rounded-full opacity-50 blur-3xl"></div>
-                <img 
-                    src="https://picsum.photos/seed/boatinterior/800/1000" 
-                    alt="Luxury Boat Experience" 
-                    className="relative z-10 rounded-[2rem] shadow-2xl w-full object-cover h-[600px]"
-                />
-                {/* Float Card */}
-                <div className="absolute bottom-10 -left-6 z-20 bg-white p-6 rounded-2xl shadow-xl max-w-xs hidden md:block border border-gray-100">
-                    <div className="flex items-center gap-4 mb-3">
-                        <div className="bg-sea-500 text-white p-2 rounded-full">
-                            <Star className="w-5 h-5 fill-current" />
-                        </div>
-                        <div>
-                            <p className="font-bold text-gray-900 text-sm">Top Rated</p>
-                            <div className="flex text-yellow-400 text-xs">★★★★★</div>
-                        </div>
-                    </div>
-                    <p className="text-gray-500 text-sm italic">"{content.testimonial.quote}"</p>
-                </div>
-            </div>
+      {/* USP Section - Numbers First Design */}
+      <section className="py-24 bg-sand-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Centered Title */}
+          <h2 className="font-serif text-4xl md:text-5xl text-sea-950 font-bold mb-16 text-center">
+            {content.usp.title}
+          </h2>
 
-            {/* Content Side */}
-            <div className="lg:w-1/2">
-                <h2 className="font-serif text-4xl md:text-5xl text-sea-950 font-bold mb-8 leading-tight">
-                    {content.usp.title}
-                </h2>
-                
-                <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12">
-                    {content.usp.items.map((item, idx) => {
-                        const icons = [Users, Anchor, Heart, Fish];
-                        const Icon = icons[idx] || Anchor;
-                        return (
-                            <div key={idx} className="flex flex-col items-start group">
-                                <div className="bg-sea-50 group-hover:bg-sea-100 transition-colors p-4 rounded-2xl mb-4 text-sea-600">
-                                    <Icon className="w-8 h-8" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                                <p className="text-gray-500 leading-relaxed text-sm">{item.desc}</p>
-                            </div>
-                        );
-                    })}
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            {content.usp.items.map((item, idx) => {
+              const stats = ['12', '100%', '200+', '50+'];
+              const labels = ['Gäste max', 'Flexibel', 'Delfine', 'Buchten'];
+              return (
+                <div key={idx} className="text-center group">
+                  <div className="text-5xl md:text-6xl font-bold text-sea-600 mb-2 group-hover:scale-110 transition-transform">
+                    {stats[idx]}
+                  </div>
+                  <div className="text-xs uppercase tracking-widest text-sea-800 font-semibold mb-3">
+                    {labels[idx]}
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
-            </div>
+              );
+            })}
+          </div>
 
+          {/* Testimonial */}
+          <div className="text-center mt-20 pt-12 border-t border-gray-200">
+            <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
+            <p className="font-serif italic text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              "{content.testimonial.quote}"
+            </p>
+            <p className="text-gray-400 mt-4 font-medium">— {content.testimonial.author}</p>
           </div>
         </div>
       </section>
