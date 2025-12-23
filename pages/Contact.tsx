@@ -38,19 +38,20 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.subtitle}</p>
         </div>
 
-        <div className="grid lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-stretch">
-          {/* Left Column - Image with Contact Info Overlay */}
-          <div className="relative rounded-2xl overflow-hidden min-h-[500px] lg:min-h-[600px]">
-            <img
-              src="https://picsum.photos/seed/harbor2/800/900"
-              alt="Mali Lošinj Harbor"
-              className="w-full h-full object-cover"
-            />
-            {/* Gradient overlay for better text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div className="grid lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-start">
+          {/* Left Column - Image and Contact Info Stacked */}
+          <div className="flex flex-col gap-6">
+            {/* Image */}
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/contact.webp"
+                alt="Mali Lošinj Harbor"
+                className="w-full h-[380px] object-cover object-[center_35%]"
+              />
+            </div>
 
-            {/* Contact Info Card - Glassmorphism */}
-            <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-xl p-6 shadow-lg">
+            {/* Contact Info Card */}
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
               <h3 className="font-serif text-xl font-bold text-sea-950 mb-4">{content.info.direct}</h3>
               <div className="space-y-4">
                 <a href="tel:+385911234567" className="flex items-center group">
