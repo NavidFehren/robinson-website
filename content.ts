@@ -93,7 +93,13 @@ export const content: Record<Language, Content> = {
     },
     gallery: {
       title: "Galerie",
-      subtitle: "Impressionen von unseren Touren"
+      subtitle: "Impressionen von unseren Touren",
+      instagram: {
+        tagline: "Bleiben Sie auf dem Laufenden",
+        heading: "Wir sind auf Instagram",
+        buttonText: "@robinsonboattours",
+        url: "https://instagram.com/robinsonboattours"
+      }
     },
     contact: {
       title: "Kontakt & Buchen",
@@ -220,7 +226,13 @@ export const content: Record<Language, Content> = {
     },
     gallery: {
       title: "Gallery",
-      subtitle: "Impressions from our tours"
+      subtitle: "Impressions from our tours",
+      instagram: {
+        tagline: "Stay up-to-date",
+        heading: "We're on Instagram",
+        buttonText: "@robinsonboattours",
+        url: "https://instagram.com/robinsonboattours"
+      }
     },
     contact: {
       title: "Contact & Booking",
@@ -347,7 +359,13 @@ export const content: Record<Language, Content> = {
     },
     gallery: {
       title: "Galerija",
-      subtitle: "Uspomene s naših izleta"
+      subtitle: "Uspomene s naših izleta",
+      instagram: {
+        tagline: "Budite u toku",
+        heading: "Pratite nas na Instagramu",
+        buttonText: "@robinsonboattours",
+        url: "https://instagram.com/robinsonboattours"
+      }
     },
     contact: {
       title: "Kontakt i Rezervacije",

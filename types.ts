@@ -75,6 +75,12 @@ export interface Content {
   gallery: {
     title: string;
     subtitle: string;
+    instagram: {
+      tagline: string;
+      heading: string;
+      buttonText: string;
+      url: string;
+    };
   };
   contact: {
     title: string;
