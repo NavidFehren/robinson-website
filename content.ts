@@ -163,7 +163,7 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "The best day of our holiday! The captain showed us bays we never would have found alone.",
-        author: "The Miller Family, UK"
+        author: "The Müller Family, Germany"
       },
       didYouKnow: {
         title: "Did you know?",
@@ -298,7 +298,7 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "Najljepši dan našeg odmora! Kapetan nam je pokazao uvale koje sami nikada ne bismo pronašli.",
-        author: "Obitelj Horvat, Zagreb"
+        author: "Obitelj Müller, Njemačka"
       },
       didYouKnow: {
         title: "Jeste li znali?",
