@@ -11,31 +11,31 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
   return (
     <div id="home">
       {/* Full Screen Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-white overflow-hidden">
+      <section className="relative h-screen flex items-end text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://picsum.photos/seed/losinjboat/1920/1080" 
-            alt="Mali Losinj Sea" 
+          <img
+            src="/hero.jpg"
+            alt="Mali Losinj Sea"
             className="w-full h-full object-cover scale-105 animate-slow-zoom"
           />
-          {/* Gradient Overlay for luxury feel */}
-          <div className="absolute inset-0 bg-gradient-to-b from-sea-950/70 via-black/20 to-sea-950/80"></div>
+          {/* Gradient Overlay - stronger on bottom-left for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-sea-950/90 via-sea-950/40 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
+        <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-28 max-w-3xl">
           <div className="mb-6 inline-flex items-center px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-sm font-medium tracking-widest uppercase">
             Mali Lošinj • Croatia
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight drop-shadow-2xl">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
             {content.hero.slogan}
           </h1>
-          <p className="text-xl md:text-2xl mb-12 font-light text-sea-50/90 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 font-light text-sea-50/90 max-w-xl leading-relaxed">
             {content.hero.sub}
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <button 
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button
               onClick={scrollToTours}
-              className="bg-white text-sea-900 px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)] flex items-center justify-center hover:bg-sea-50"
+              className="bg-white text-sea-900 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)] flex items-center justify-center hover:bg-sea-50"
             >
               {content.hero.ctaPrimary}
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -43,12 +43,6 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center p-1">
-                <div className="w-1 h-3 bg-white rounded-full"></div>
-            </div>
-        </div>
       </section>
 
       {/* USP Section - "Experience the Ocean" Style */}
