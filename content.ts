@@ -126,6 +126,8 @@ export const content: Record<Language, Content> = {
         locationDesc: "Wir treffen uns im Haupthafen von Mali Lošinj."
       },
       faqTitle: "Häufig gestellte Fragen (FAQ)",
+      faqCtaSubtitle: "Noch Fragen?",
+      faqCtaButton: "Kontaktieren Sie uns",
       faqs: [
         { question: "Was sollen wir mitbringen?", answer: "Badesachen, Handtuch, Sonnenschutz. Schnorchelausrüstung stellen wir." },
         { question: "Ist Verpflegung inklusive?", answer: "Wir bieten Wasser und kleine Snacks. Mittagessen kann arrangiert werden." },
@@ -259,6 +261,8 @@ export const content: Record<Language, Content> = {
         locationDesc: "We meet at the main harbor of Mali Lošinj."
       },
       faqTitle: "Frequently Asked Questions",
+      faqCtaSubtitle: "Still have questions?",
+      faqCtaButton: "Contact us",
       faqs: [
         { question: "What should we bring?", answer: "Swimwear, towel, sunscreen. We provide snorkel gear." },
         { question: "Is food included?", answer: "We provide water and snacks. Lunch can be arranged." },
@@ -392,6 +396,8 @@ export const content: Record<Language, Content> = {
         locationDesc: "Sastajemo se u glavnoj luci Mali Lošinj."
       },
       faqTitle: "Česta pitanja (FAQ)",
+      faqCtaSubtitle: "Imate još pitanja?",
+      faqCtaButton: "Kontaktirajte nas",
       faqs: [
         { question: "Što trebamo ponijeti?", answer: "Kupaći, ručnik, kremu za sunčanje. Opremu za ronjenje imamo." },
         { question: "Je li hrana uključena?", answer: "Nudimo vodu i grickalice. Ručak se može dogovoriti." },

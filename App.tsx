@@ -6,6 +6,7 @@ import Tours from './pages/Tours';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
 import { content } from './content';
 import { Language, Page } from './types';
 import { MessageSquare } from 'lucide-react';
@@ -39,6 +40,13 @@ function App() {
         <About content={currentContent.about} />
         <Gallery content={currentContent.gallery} />
         <Contact content={currentContent.contact} />
+        <FAQ
+          title={currentContent.contact.faqTitle}
+          faqs={currentContent.contact.faqs}
+          ctaSubtitle={currentContent.contact.faqCtaSubtitle}
+          ctaButton={currentContent.contact.faqCtaButton}
+          onScrollToContact={() => scrollToSection('contact')}
+        />
       </main>
 
       <Footer setPage={(p) => scrollToSection(p === 'home' ? 'home' : p)} lang={lang} />

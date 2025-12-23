@@ -107,6 +107,8 @@ export interface Content {
       locationDesc: string;
     };
     faqTitle: string;
+    faqCtaSubtitle: string;
+    faqCtaButton: string;
     faqs: FaqItem[];
   };
 }
