@@ -8,81 +8,136 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ setPage, lang }) => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <footer className="bg-sea-950 text-white pt-16 pb-8 border-t border-sea-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <div className="flex items-center mb-4">
-                 <Anchor className="h-6 w-6 mr-2 text-sea-500" />
-                 <span className="font-serif text-xl font-bold">ROBINSON</span>
-            </div>
-            <p className="text-sea-300 text-sm mb-6 leading-relaxed">
-              {lang === 'de' ? 'Ihr Tor zu den versteckten Juwelen von Lošinj. Private, exklusive und unvergessliche Bootstouren.' : 
-               lang === 'en' ? 'Your gateway to the hidden gems of Lošinj. Private, exclusive, and unforgettable boat tours.' : 
-               'Vaš ulaz u skrivene dragulje Lošinja. Privatni, ekskluzivni i nezaboravni izleti brodom.'}
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-sea-900 flex items-center justify-center text-white hover:bg-sea-500 transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-sea-900 flex items-center justify-center text-white hover:bg-sea-500 transition-colors"><Facebook className="w-5 h-5" /></a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-wider">{lang === 'de' ? 'Entdecken' : lang === 'hr' ? 'Istraži' : 'Explore'}</h4>
-            <ul className="space-y-3 text-sea-300 text-sm">
-              <li><button onClick={() => scrollTo('home')} className="hover:text-white hover:translate-x-1 transition-all">Home</button></li>
-              <li><button onClick={() => scrollTo('tours')} className="hover:text-white hover:translate-x-1 transition-all">{lang === 'hr' ? 'Izleti' : 'Tours'}</button></li>
-              <li><button onClick={() => scrollTo('gallery')} className="hover:text-white hover:translate-x-1 transition-all">{lang === 'de' ? 'Galerie' : lang === 'hr' ? 'Galerija' : 'Gallery'}</button></li>
-              <li><button onClick={() => scrollTo('about')} className="hover:text-white hover:translate-x-1 transition-all">{lang === 'de' ? 'Über uns' : lang === 'hr' ? 'O nama' : 'About Us'}</button></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div className="md:col-span-2">
-            <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-wider">{lang === 'de' ? 'Kontaktieren Sie uns' : lang === 'hr' ? 'Kontaktirajte nas' : 'Contact Us'}</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sea-300 text-sm">
-                <div className="flex items-start">
-                    <Phone className="w-5 h-5 mr-3 text-sea-500 mt-0.5" /> 
-                    <div>
-                        <span className="block text-white font-medium mb-1">Phone</span>
-                        +385 91 123 4567
-                    </div>
-                </div>
-                <div className="flex items-start">
-                    <Mail className="w-5 h-5 mr-3 text-sea-500 mt-0.5" /> 
-                    <div>
-                        <span className="block text-white font-medium mb-1">Email</span>
-                        info@robinson-losinj.com
-                    </div>
-                </div>
-                 <div className="flex items-start sm:col-span-2">
-                    <MapPin className="w-5 h-5 mr-3 text-sea-500 mt-0.5" /> 
-                    <div>
-                        <span className="block text-white font-medium mb-1">Location</span>
-                        Mali Lošinj Harbor, Croatia
-                    </div>
-                </div>
-            </div>
-          </div>
-
-        </div>
-        <div className="border-t border-sea-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sea-400 text-xs">
-          <p>&copy; {new Date().getFullYear()} Robinson Boat Tours. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-             <a href="#" className="hover:text-white">Privacy Policy</a>
-             <a href="#" className="hover:text-white">Terms of Service</a>
-          </div>
-        </div>
+    <>
+      {/* Wave Decoration */}
+      <div className="bg-sand-50">
+        <svg
+          className="w-full h-16 md:h-20 lg:h-24 block"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,60 C150,100 350,20 600,60 C850,100 1050,20 1200,60 L1200,120 L0,120 Z"
+            className="fill-sea-950"
+          />
+        </svg>
       </div>
-    </footer>
+
+      {/* Main Footer */}
+      <footer className="bg-gradient-to-b from-sea-950 to-sea-900 text-white pt-12 pb-8 -mt-px">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12 mb-12">
+
+            {/* Brand */}
+            <div className="md:col-span-2">
+              <div className="flex items-center mb-4">
+                <div className="bg-white/10 p-2 rounded-lg mr-3">
+                  <Anchor className="h-6 w-6 text-white/60" />
+                </div>
+                <div>
+                  <span className="font-serif text-xl font-bold block">ROBINSON</span>
+                  <span className="text-white/60 text-xs uppercase tracking-widest">Boat Tours</span>
+                </div>
+              </div>
+              <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
+                {lang === 'de' ? 'Ihr Tor zu den versteckten Juwelen von Lošinj. Private, exklusive und unvergessliche Bootstouren.' :
+                 lang === 'en' ? 'Your gateway to the hidden gems of Lošinj. Private, exclusive, and unforgettable boat tours.' :
+                 'Vaš ulaz u skrivene dragulje Lošinja. Privatni, ekskluzivni i nezaboravni izleti brodom.'}
+              </p>
+              <div className="flex space-x-3">
+                <a
+                  href="#"
+                  className="w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white hover:border-white/20 hover:scale-110 transition-all duration-300"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="#"
+                  className="w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white hover:border-white/20 hover:scale-110 transition-all duration-300"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Contact */}
+            <div className="md:col-span-3">
+              <h4 className="font-bold text-white mb-6 uppercase text-sm tracking-wider">
+                {lang === 'de' ? 'Kontaktieren Sie uns' : lang === 'hr' ? 'Kontaktirajte nas' : 'Contact Us'}
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Phone Card */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                  <div className="flex items-start">
+                    <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div className="ml-4">
+                      <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">
+                        {lang === 'de' ? 'Telefon' : lang === 'hr' ? 'Telefon' : 'Phone'}
+                      </span>
+                      <a href="tel:+385911234567" className="text-white font-medium hover:text-white/70 transition-colors">
+                        +385 91 123 4567
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email Card */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                  <div className="flex items-start">
+                    <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div className="ml-4">
+                      <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">Email</span>
+                      <a href="mailto:info@robinson-losinj.com" className="text-white font-medium hover:text-white/70 transition-colors">
+                        info@robinson-losinj.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Location Card - Full Width */}
+                <div className="sm:col-span-2 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                  <div className="flex items-start">
+                    <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div className="ml-4">
+                      <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">
+                        {lang === 'de' ? 'Standort' : lang === 'hr' ? 'Lokacija' : 'Location'}
+                      </span>
+                      <span className="text-white font-medium">Mali Lošinj Harbor, Croatia</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="relative">
+            {/* Gradient separator */}
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+
+            <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs">
+              <p className="flex items-center">
+                <Anchor className="w-4 h-4 mr-2 text-white/30" />
+                &copy; {new Date().getFullYear()} Robinson Boat Tours. All rights reserved.
+              </p>
+              <div className="flex items-center space-x-4 mt-4 md:mt-0">
+                <a href="#" className="hover:text-white/70 transition-colors">Privacy Policy</a>
+                <span className="text-white/20">|</span>
+                <a href="#" className="hover:text-white/70 transition-colors">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 
