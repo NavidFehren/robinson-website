@@ -405,5 +405,140 @@ export const content: Record<Language, Content> = {
         { question: "Što ako je loše vrijeme?", answer: "Sigurnost je prva. Kontaktirat ćemo vas za promjenu termina." }
       ]
     }
+  },
+  it: {
+    nav: {
+      home: "Home",
+      tours: "Escursioni",
+      about: "Chi siamo",
+      gallery: "Galleria",
+      contact: "Contatti",
+      bookNow: "Prenota"
+    },
+    home: {
+      hero: {
+        slogan: "Scopri Lošinj come un Robinson",
+        sub: "Tour privati in barca con il cuore – Lontano dal turismo di massa",
+        ctaPrimary: "Vedi le escursioni",
+        ctaSecondary: "Richiedi informazioni"
+      },
+      usp: {
+        title: "Perché Robinson Tours?",
+        items: [
+          { title: "Massimo 12 ospiti", desc: "Atmosfera privata e intima, niente folle." },
+          { title: "Itinerari personalizzati", desc: "Il vostro giorno, il vostro percorso – Soste flessibili." },
+          { title: "Adatto alle famiglie", desc: "Ospitalità calorosa da una famiglia locale." },
+          { title: "Delfini e baie nascoste", desc: "Scoprite luoghi accessibili solo in barca." }
+        ]
+      },
+      testimonial: {
+        quote: "La giornata più bella della nostra vacanza! Il capitano ci ha mostrato baie che non avremmo mai trovato da soli.",
+        author: "Famiglia Müller, Germania"
+      },
+      didYouKnow: {
+        title: "Lo sapevate?",
+        text: "Circa 200 delfini vivono nelle acque intorno a Lošinj. Le probabilità di vederli sono alte!"
+      }
+    },
+    tours: {
+      title: "Le nostre escursioni",
+      subtitle: "Scegliete la vostra esperienza perfetta tra le isole",
+      items: [
+        {
+          id: "island",
+          name: "Gita giornaliera tra le isole (Susak e Ilovik)",
+          duration: "Circa 10:00 – 17:00",
+          description: "Esplorate le uniche spiagge sabbiose di Susak e l'affascinante isola dei fiori Ilovik.",
+          highlights: ["Nuoto in baie nascoste", "Passeggiata nel villaggio di Susak", "Isola dei fiori Ilovik"],
+          included: ["Capitano", "Carburante", "Attrezzatura snorkeling", "Drink di benvenuto", "Acqua"],
+          price: "Da 500€ per barca (fino a 12 pers.)",
+          image: "https://picsum.photos/seed/island/800/600"
+        },
+        {
+          id: "sunset",
+          name: "Tramonto e Delfini",
+          duration: "Circa 3 ore (Serale)",
+          description: "Una crociera serale verso i punti di avvistamento dei delfini intorno a Lošinj, con aperitivo al tramonto.",
+          highlights: ["Osservazione delfini", "Costa panoramica", "Tramonto romantico"],
+          included: ["Capitano", "Carburante", "Attrezzatura snorkeling", "Aperitivo al tramonto"],
+          price: "Da 300€ per barca",
+          image: "https://picsum.photos/seed/sunset/800/600"
+        },
+        {
+          id: "custom",
+          name: "Crea la tua giornata (Tour personalizzato)",
+          duration: "Flessibile (Mezza o intera giornata)",
+          description: "Create la vostra avventura! Ideale per compleanni, proposte o semplicemente una giornata su misura.",
+          highlights: ["Totale libertà di percorso", "Spiagge 'Robinson' isolate", "Escursioni combinate a piedi e in barca"],
+          included: ["Pianificazione itinerario", "Capitano", "Carburante", "Attrezzatura snorkeling"],
+          price: "Prezzo su richiesta",
+          image: "https://picsum.photos/seed/custom/800/600"
+        }
+      ],
+      info: {
+        bringTitle: "Cosa portare",
+        bringText: "Costume, asciugamano, protezione solare, cappello, macchina fotografica.",
+        foodTitle: "Cibo e bevande",
+        foodText: "Potete portare un picnic. Il pranzo può essere organizzato nei ristoranti delle isole.",
+        kidsTitle: "Adatto a tutti",
+        kidsText: "Bambini e ospiti anziani sono i benvenuti."
+      }
+    },
+    about: {
+      title: "Chi siamo",
+      storyTitle: "La nostra storia",
+      storyText: "Robinson Boat Tours è un'azienda familiare. Il nostro capitano è nato e cresciuto a Lošinj. L'amore per il mare ci guida.",
+      captainTitle: "Il Capitano",
+      captainText: "Con decenni di esperienza in queste acque, conosce ogni roccia e ogni baia.",
+      captainBio: ["Decenni di esperienza", "Parla tedesco, inglese, croato", "Esperto locale"],
+      nameTitle: "Perché 'Robinson'?",
+      nameText: "Vi portiamo in luoghi così incontaminati che vi sentirete come un moderno Robinson Crusoe.",
+      philosophyTitle: "La nostra filosofia",
+      philosophyItems: ["Accoglienza calorosa", "Attenzione personale", "Flessibilità", "Condivisione dei segreti dell'isola"]
+    },
+    gallery: {
+      title: "Galleria",
+      subtitle: "Impressioni dalle nostre escursioni",
+      instagram: {
+        tagline: "Restate aggiornati",
+        heading: "Siamo su Instagram",
+        buttonText: "@robinsonboattours",
+        url: "https://instagram.com/robinsonboattours"
+      }
+    },
+    contact: {
+      title: "Contatti e Prenotazioni",
+      subtitle: "Pianificate la vostra avventura con noi",
+      form: {
+        name: "Nome",
+        email: "Indirizzo email",
+        phone: "Numero di telefono (facoltativo)",
+        date: "Data preferita",
+        guests: "Numero di ospiti",
+        tourType: "Escursione preferita",
+        message: "Messaggio / Richieste speciali",
+        submit: "Invia richiesta",
+        success: "Grazie! Confermeremo la disponibilità entro 24 ore.",
+        options: {
+          islandHopping: "Gita tra le isole (Susak & Ilovik)",
+          sunset: "Tramonto & Delfini",
+          custom: "Richiesta personalizzata"
+        }
+      },
+      info: {
+        direct: "Contatto diretto",
+        location: "Punto d'incontro",
+        locationDesc: "Ci incontriamo nel porto principale di Mali Lošinj."
+      },
+      faqTitle: "Domande frequenti (FAQ)",
+      faqCtaSubtitle: "Hai ancora domande?",
+      faqCtaButton: "Contattaci",
+      faqs: [
+        { question: "Cosa dobbiamo portare?", answer: "Costume, asciugamano, protezione solare. L'attrezzatura snorkeling la forniamo noi." },
+        { question: "Il cibo è incluso?", answer: "Offriamo acqua e snack. Il pranzo può essere organizzato." },
+        { question: "Sono ammessi i cani?", answer: "Chiedeteci – di solito i cani ben educati sono benvenuti." },
+        { question: "Cosa succede in caso di maltempo?", answer: "La sicurezza prima di tutto. Vi contatteremo per riprogrammare." }
+      ]
+    }
   }
 };

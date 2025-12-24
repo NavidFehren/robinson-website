@@ -1,4 +1,4 @@
-export type Language = 'de' | 'en' | 'hr';
+export type Language = 'de' | 'en' | 'hr' | 'it';
 
 export type Page = 'home' | 'tours' | 'about' | 'gallery' | 'contact';
 
