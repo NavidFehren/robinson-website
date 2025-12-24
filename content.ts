@@ -3,7 +3,7 @@ import { Content, Language } from './types';
 export const content: Record<Language, Content> = {
   de: {
     nav: {
-      home: "Startseite",
+      home: "Home",
       tours: "Touren",
       about: "Über uns",
       gallery: "Galerie",
@@ -275,7 +275,7 @@ export const content: Record<Language, Content> = {
   },
   hr: {
     nav: {
-      home: "Početna",
+      home: "Home",
       tours: "Izleti",
       about: "O nama",
       gallery: "Galerija",
