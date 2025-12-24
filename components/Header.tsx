@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, Anchor, Phone, ChevronDown } from 'lucide-react';
+import { X, Anchor, Phone, ChevronDown } from 'lucide-react';
 import { Language, Content } from '../types';
 
 const FLAGS: Record<Language, { emoji: string; label: string }> = {
@@ -60,6 +60,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
     : `cursor-pointer transition-colors font-medium ${scrolled ? 'text-gray-700 hover:text-sea-600' : 'text-white/90 hover:text-white'}`;
 
   return (
+    <>
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -160,29 +161,92 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
                 </div>
               )}
             </div>
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`${scrolled ? 'text-gray-600' : 'text-white'} hover:opacity-80`}>
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={`relative w-6 h-6 ${scrolled ? 'text-gray-600' : 'text-white'}`}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              <span className={`block absolute h-0.5 w-6 bg-current transform transition-all duration-300 ${isMenuOpen ? 'rotate-45 top-[11px]' : 'top-1'}`} />
+              <span className={`block absolute h-0.5 w-6 bg-current top-[11px] transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : ''}`} />
+              <span className={`block absolute h-0.5 w-6 bg-current transform transition-all duration-300 ${isMenuOpen ? '-rotate-45 top-[11px]' : 'top-[19px]'}`} />
             </button>
           </div>
         </div>
       </div>
+    </header>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
-          <div className="px-4 pt-2 pb-6 space-y-2">
-            <button onClick={() => handleNav('home')} className={navClass(true)}>{content.home}</button>
-            <button onClick={() => handleNav('tours')} className={navClass(true)}>{content.tours}</button>
-            <button onClick={() => handleNav('about')} className={navClass(true)}>{content.about}</button>
-            <button onClick={() => handleNav('gallery')} className={navClass(true)}>{content.gallery}</button>
-            <button onClick={() => handleNav('contact')} className={navClass(true)}>{content.contact}</button>
-            <div className="pt-4">
-               <button onClick={() => handleNav('contact')} className="w-full bg-sea-600 text-white py-3 rounded-lg font-bold shadow-md">{content.bookNow}</button>
+    {/* Mobile Menu - Full Screen Overlay (outside header for correct fixed positioning) */}
+    {isMenuOpen && (
+        <div className="md:hidden fixed inset-0 z-50">
+          {/* Menu with gradient background - slides in together */}
+          <div className="h-full flex flex-col menu-slide-in bg-gradient-to-br from-sea-600 via-sea-700 to-sea-900">
+            {/* Header with close button and logo */}
+            <div className="flex justify-between items-center px-4 py-6">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="text-white/90 hover:text-white transition-colors p-2"
+                aria-label="Close menu"
+              >
+                <X className="h-7 w-7" />
+              </button>
+              <div className="flex items-center">
+                <div className="p-2 rounded-full bg-white/10 text-white backdrop-blur-sm">
+                  <Anchor className="h-6 w-6" />
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation items */}
+            <nav className="flex-1 flex flex-col justify-center px-8 space-y-2">
+              {[
+                { id: 'home', label: content.home },
+                { id: 'tours', label: content.tours },
+                { id: 'about', label: content.about },
+                { id: 'gallery', label: content.gallery },
+                { id: 'contact', label: content.contact },
+              ].map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleNav(item.id)}
+                  className="text-2xl font-medium text-white/90 hover:text-white py-4 text-left transition-all duration-200 hover:translate-x-2"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+
+            {/* Bottom section: Language selector + CTA */}
+            <div className="px-8 pb-10 space-y-6">
+              {/* Language flags */}
+              <div className="flex justify-center gap-4">
+                {LANGUAGE_ORDER.map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => { setLang(l); }}
+                    className={`text-2xl p-2 rounded-full transition-all ${
+                      lang === l
+                        ? 'bg-white/20 scale-110'
+                        : 'opacity-70 hover:opacity-100 hover:bg-white/10'
+                    }`}
+                    aria-label={FLAGS[l].label}
+                  >
+                    {FLAGS[l].emoji}
+                  </button>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <button
+                onClick={() => handleNav('contact')}
+                className="w-full bg-white text-sea-700 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-sea-50 transition-colors"
+              >
+                {content.bookNow}
+              </button>
             </div>
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 };
 

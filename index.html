@@ -70,6 +70,14 @@
       .wave-animation-fast {
         animation: wave 18s linear infinite;
       }
+      /* Mobile menu animation */
+      @keyframes slideIn {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      .menu-slide-in {
+        animation: slideIn 0.3s ease-out forwards;
+      }
     </style>
   <script type="importmap">
 {
