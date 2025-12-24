@@ -139,7 +139,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 playsInline
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               >
-                <source src="/drone.MP4" type="video/mp4" />
+                <source src="/drone_comp.mp4" type="video/mp4" />
               </video>
             </div>
 
