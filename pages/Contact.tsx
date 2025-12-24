@@ -45,7 +45,7 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.subtitle}</p>
         </div>
 
-        <div className="grid lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-start">
+        <div className="grid xl:grid-cols-[2fr_3fr] gap-6 lg:gap-8 xl:gap-12 items-start">
           {/* Left Column - Image and Contact Info Stacked */}
           <div className="flex flex-col gap-6">
             {/* Image */}
@@ -53,7 +53,7 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
               <img
                 src="/contact.webp"
                 alt="Mali Lošinj Harbor"
-                className="w-full h-[380px] object-cover object-[center_35%]"
+                className="w-full h-64 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_35%]"
               />
             </div>
 

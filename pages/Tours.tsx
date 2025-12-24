@@ -20,9 +20,9 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12">
           {content.items.map((tour) => (
-            <div key={tour.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 flex flex-col lg:flex-row group transition-all hover:shadow-2xl hover:border-sea-100">
+            <div key={tour.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 flex flex-col xl:flex-row group transition-all hover:shadow-2xl hover:border-sea-100">
               {/* Image Side */}
-              <div className="lg:w-2/5 relative h-72 lg:h-auto overflow-hidden">
+              <div className="xl:w-2/5 relative h-64 md:h-72 xl:h-auto overflow-hidden">
                 <img 
                   src={tour.image} 
                   alt={tour.name} 
@@ -34,7 +34,7 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
               </div>
 
               {/* Content Side */}
-              <div className="lg:w-3/5 p-8 md:p-12 flex flex-col justify-between">
+              <div className="xl:w-3/5 p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-between">
                 <div>
                   <div className="flex flex-wrap gap-4 text-sm font-medium text-gray-500 mb-6">
                     <span className="flex items-center bg-sea-50 px-4 py-1.5 rounded-full text-sea-700 border border-sea-100">

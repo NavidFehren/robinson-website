@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8 items-center">
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8 items-center">
             <button onClick={() => handleNav('home')} className={navClass()}>{content.home}</button>
             <button onClick={() => handleNav('tours')} className={navClass()}>{content.tours}</button>
             <button onClick={() => handleNav('about')} className={navClass()}>{content.about}</button>
@@ -132,7 +132,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-3">
+          <div className="lg:hidden flex items-center space-x-3">
             <div className="relative" ref={langMobileRef}>
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -177,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
 
     {/* Mobile Menu - Full Screen Overlay (outside header for correct fixed positioning) */}
     {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-50">
+        <div className="lg:hidden fixed inset-0 z-50">
           {/* Menu with gradient background - slides in together */}
           <div className="h-full flex flex-col menu-slide-in bg-gradient-to-br from-sea-600 via-sea-700 to-sea-900">
             {/* Header with close button and logo */}

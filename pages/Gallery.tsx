@@ -42,18 +42,18 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
   return (
     <section id="gallery" className="py-24 bg-sand-50">
       {/* Desktop Layout */}
-      <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-[1fr_minmax(280px,320px)_1fr] gap-6 lg:gap-8 items-center min-h-[500px]">
+      <div className="hidden lg:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-[1fr_minmax(280px,320px)_1fr] gap-6 lg:gap-8 xl:gap-10 items-center min-h-[500px]">
           {/* Left Column - Staggered Images */}
           <div className="flex gap-4">
             {/* Left stack */}
             <div className="flex flex-col gap-4 pt-12">
-              <ImageCard src={leftImages[0].src} className="w-40 h-32 lg:w-48 lg:h-40" />
-              <ImageCard src={leftImages[1].src} className="w-40 h-48 lg:w-48 lg:h-56" />
+              <ImageCard src={leftImages[0].src} className="w-36 h-28 lg:w-40 lg:h-32 xl:w-48 xl:h-40" />
+              <ImageCard src={leftImages[1].src} className="w-36 h-44 lg:w-40 lg:h-48 xl:w-48 xl:h-56" />
             </div>
             {/* Right stack (offset) */}
             <div className="flex flex-col gap-4 pb-8">
-              <ImageCard src={leftImages[2].src} className="w-36 h-56 lg:w-44 lg:h-64" />
+              <ImageCard src={leftImages[2].src} className="w-32 h-48 lg:w-36 lg:h-56 xl:w-44 xl:h-64" />
             </div>
           </div>
 
@@ -80,19 +80,19 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
           <div className="flex gap-4 justify-end">
             {/* Left stack (offset) */}
             <div className="flex flex-col gap-4 pt-8">
-              <ImageCard src={rightImages[0].src} className="w-36 h-56 lg:w-44 lg:h-64" />
+              <ImageCard src={rightImages[0].src} className="w-32 h-48 lg:w-36 lg:h-56 xl:w-44 xl:h-64" />
             </div>
             {/* Right stack */}
             <div className="flex flex-col gap-4 pb-12">
-              <ImageCard src={rightImages[1].src} className="w-40 h-40 lg:w-48 lg:h-48" />
-              <ImageCard src={rightImages[2].src} className="w-40 h-44 lg:w-48 lg:h-52" />
+              <ImageCard src={rightImages[1].src} className="w-36 h-36 lg:w-40 lg:h-40 xl:w-48 xl:h-48" />
+              <ImageCard src={rightImages[2].src} className="w-36 h-40 lg:w-40 lg:h-44 xl:w-48 xl:h-52" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Layout */}
-      <div className="md:hidden px-4">
+      <div className="lg:hidden px-4">
         {/* Top Images */}
         <div className="grid grid-cols-2 gap-4 mb-12">
           {mobileTopImages.map((img, idx) => (

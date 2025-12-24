@@ -54,7 +54,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           </h2>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
             {content.usp.items.map((item, idx) => {
               const stats = ['12', '100%', '200+', '50+'];
               const labels = ['Gäste max', 'Flexibel', 'Delfine', 'Buchten'];
