@@ -8,14 +8,11 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import { content } from './content';
-import { Language, Page } from './types';
+import { Language } from './types';
 import { MessageSquare } from 'lucide-react';
 
 function App() {
   const [lang, setLang] = useState<Language>('de');
-  // Although we are single page, we keep the page type in state just for type safety in header if needed, 
-  // but mostly we rely on IDs now.
-  const [currentPage, setCurrentPage] = useState<Page>('home'); 
   
   const currentContent = content[lang];
 
@@ -49,7 +46,7 @@ function App() {
         />
       </main>
 
-      <Footer setPage={(p) => scrollToSection(p === 'home' ? 'home' : p)} lang={lang} />
+      <Footer lang={lang} />
 
       {/* Sticky Mobile CTA */}
       <div className="md:hidden fixed bottom-6 right-6 z-50">

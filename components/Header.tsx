@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, Anchor, Phone, ChevronDown } from 'lucide-react';
-import { Language, Page, Content } from '../types';
+import { Language, Content } from '../types';
 
 const FLAGS: Record<Language, { emoji: string; label: string }> = {
   de: { emoji: '🇩🇪', label: 'Deutsch' },

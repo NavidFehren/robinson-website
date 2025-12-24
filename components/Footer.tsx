@@ -1,13 +1,12 @@
 import React from 'react';
-import { Facebook, Instagram, Mail, Phone, MapPin, Anchor } from 'lucide-react';
-import { Page, Language } from '../types';
+import { Instagram, Mail, Phone, MapPin, Anchor } from 'lucide-react';
+import { Language } from '../types';
 
 interface FooterProps {
-    setPage: (p: Page) => void;
-    lang: Language;
+  lang: Language;
 }
 
-const Footer: React.FC<FooterProps> = ({ setPage, lang }) => {
+const Footer: React.FC<FooterProps> = ({ lang }) => {
   return (
     <>
       {/* Wave Decoration */}
@@ -47,16 +46,13 @@ const Footer: React.FC<FooterProps> = ({ setPage, lang }) => {
               </p>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://instagram.com/robinsonboattours"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white hover:border-white/20 hover:scale-110 transition-all duration-300"
+                  aria-label="Follow us on Instagram"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white hover:border-white/20 hover:scale-110 transition-all duration-300"
-                >
-                  <Facebook className="w-5 h-5" />
                 </a>
               </div>
             </div>
