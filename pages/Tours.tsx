@@ -73,11 +73,11 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
                 </div>
 
                 <div className="mt-4 pt-8 border-t border-gray-100 flex justify-start">
-                    <button 
+                    <button
                         onClick={openContact}
                         className="w-full md:w-auto bg-sea-900 hover:bg-sea-800 text-white font-semibold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-sea-900/20 text-center"
                     >
-                        {content.info.bringTitle.includes('bring') ? 'Book This Experience' : content.info.bringTitle.includes('mitbringen') ? 'Erlebnis buchen' : 'Rezerviraj'}
+                        {content.info.bookButton}
                     </button>
                 </div>
               </div>

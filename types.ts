@@ -37,6 +37,7 @@ export interface Content {
     usp: {
       title: string;
       items: Array<{ title: string; desc: string }>;
+      statLabels: string[];
     };
     testimonial: {
       quote: string;
@@ -58,6 +59,7 @@ export interface Content {
       foodText: string;
       kidsTitle: string;
       kidsText: string;
+      bookButton: string;
     };
   };
   about: {

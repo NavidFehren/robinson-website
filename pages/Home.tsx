@@ -1,6 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Users, SlidersHorizontal, Fish, MapPin } from 'lucide-react';
 
 interface HomeProps {
   content: Content['home'];
@@ -16,7 +16,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           <img
             src="/hero.jpg"
             alt="Mali Losinj Sea"
-            className="w-full h-full object-cover scale-105 animate-slow-zoom"
+            className="w-full h-full object-cover"
           />
           {/* Gradient Overlay - stronger on bottom-left for text readability */}
           <div className="absolute inset-0 bg-gradient-to-tr from-sea-950/90 via-sea-950/40 to-transparent"></div>
@@ -57,14 +57,16 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
             {content.usp.items.map((item, idx) => {
               const stats = ['12', '100%', '200+', '50+'];
-              const labels = ['Gäste max', 'Flexibel', 'Delfine', 'Buchten'];
+              const icons = [Users, SlidersHorizontal, Fish, MapPin];
+              const Icon = icons[idx];
               return (
                 <div key={idx} className="text-center group">
+                  <Icon className="w-8 h-8 text-sea-500 mx-auto mb-3" />
                   <div className="text-5xl md:text-6xl font-bold text-sea-600 mb-2 group-hover:scale-110 transition-transform">
                     {stats[idx]}
                   </div>
                   <div className="text-xs uppercase tracking-widest text-sea-800 font-semibold mb-3">
-                    {labels[idx]}
+                    {content.usp.statLabels[idx]}
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {item.desc}

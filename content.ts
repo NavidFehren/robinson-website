@@ -24,7 +24,8 @@ export const content: Record<Language, Content> = {
           { title: "Individuelle Routen", desc: "Ihr Tag, Ihr Weg – Flexible Stopps nach Wunsch." },
           { title: "Familienfreundlich", desc: "Herzliche Gastfreundschaft einer einheimischen Familie." },
           { title: "Delfine & versteckte Buchten", desc: "Entdecken Sie Orte, die nur mit dem Boot erreichbar sind." }
-        ]
+        ],
+        statLabels: ["Gäste max", "Flexibel", "Delfine", "Buchten"]
       },
       testimonial: {
         quote: "Der schönste Tag unseres Urlaubs! Der Kapitän zeigte uns Buchten, die wir alleine nie gefunden hätten.",
@@ -76,7 +77,8 @@ export const content: Record<Language, Content> = {
         foodTitle: "Verpflegung",
         foodText: "Picknick kann mitgebracht werden. Mittagessen in Inselrestaurants möglich.",
         kidsTitle: "Für alle geeignet",
-        kidsText: "Kinder und ältere Gäste sind herzlich willkommen."
+        kidsText: "Kinder und ältere Gäste sind herzlich willkommen.",
+        bookButton: "Erlebnis buchen"
       }
     },
     about: {
@@ -160,7 +162,8 @@ export const content: Record<Language, Content> = {
           { title: "Individual Routes", desc: "Your day, your way – Flexible stops." },
           { title: "Family Friendly", desc: "Warm hospitality from a local family." },
           { title: "Dolphins & Hidden Bays", desc: "Discover places only accessible by boat." }
-        ]
+        ],
+        statLabels: ["Guests max", "Flexible", "Dolphins", "Bays"]
       },
       testimonial: {
         quote: "The best day of our holiday! The captain showed us bays we never would have found alone.",
@@ -212,7 +215,8 @@ export const content: Record<Language, Content> = {
         foodTitle: "Food & Drink",
         foodText: "You can bring a picnic. Lunch can be arranged at island restaurants.",
         kidsTitle: "Suitable for all",
-        kidsText: "Children and elderly guests are very welcome."
+        kidsText: "Children and elderly guests are very welcome.",
+        bookButton: "Book This Experience"
       }
     },
     about: {
@@ -296,7 +300,8 @@ export const content: Record<Language, Content> = {
           { title: "Individualne rute", desc: "Vaš dan, vaš put – fleksibilna zaustavljanja." },
           { title: "Prijatelji obitelji", desc: "Topla dobrodošlica lokalne obitelji." },
           { title: "Dupini i skrivene uvale", desc: "Otkrijte mjesta dostupna samo brodom." }
-        ]
+        ],
+        statLabels: ["Gostiju max", "Fleksibilno", "Dupini", "Uvale"]
       },
       testimonial: {
         quote: "Najljepši dan našeg odmora! Kapetan nam je pokazao uvale koje sami nikada ne bismo pronašli.",
@@ -348,7 +353,8 @@ export const content: Record<Language, Content> = {
         foodTitle: "Hrana i piće",
         foodText: "Možete ponijeti piknik. Ručak se može organizirati u restoranima na otocima.",
         kidsTitle: "Prikladno za sve",
-        kidsText: "Djeca i stariji gosti su dobrodošli."
+        kidsText: "Djeca i stariji gosti su dobrodošli.",
+        bookButton: "Rezerviraj doživljaj"
       }
     },
     about: {
@@ -432,7 +438,8 @@ export const content: Record<Language, Content> = {
           { title: "Itinerari personalizzati", desc: "Il vostro giorno, il vostro percorso – Soste flessibili." },
           { title: "Adatto alle famiglie", desc: "Ospitalità calorosa da una famiglia locale." },
           { title: "Delfini e baie nascoste", desc: "Scoprite luoghi accessibili solo in barca." }
-        ]
+        ],
+        statLabels: ["Ospiti max", "Flessibile", "Delfini", "Baie"]
       },
       testimonial: {
         quote: "La giornata più bella della nostra vacanza! Il capitano ci ha mostrato baie che non avremmo mai trovato da soli.",
@@ -484,7 +491,8 @@ export const content: Record<Language, Content> = {
         foodTitle: "Cibo e bevande",
         foodText: "Potete portare un picnic. Il pranzo può essere organizzato nei ristoranti delle isole.",
         kidsTitle: "Adatto a tutti",
-        kidsText: "Bambini e ospiti anziani sono i benvenuti."
+        kidsText: "Bambini e ospiti anziani sono i benvenuti.",
+        bookButton: "Prenota l'esperienza"
       }
     },
     about: {
