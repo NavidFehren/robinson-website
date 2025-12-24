@@ -14,7 +14,7 @@ const About: React.FC<AboutProps> = ({ content }) => {
                 <div className="md:w-1/2 relative">
                     <div className="absolute top-4 left-4 w-full h-full border-2 border-sea-100 rounded-2xl z-0 transform translate-x-4 translate-y-4"></div>
                     <img 
-                        src="https://picsum.photos/seed/captain/600/800" 
+                        src="/capitan.jpg" 
                         alt="Captain" 
                         className="relative z-10 rounded-2xl shadow-xl object-cover h-72 md:h-80 lg:h-96 xl:h-[500px] w-full" 
                     />

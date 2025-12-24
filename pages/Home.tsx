@@ -97,7 +97,21 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
       </section>
 
       {/* Did You Know / Fact Section */}
-      <section className="py-24 pb-32 bg-gradient-to-b from-sea-950 via-sea-900 to-sea-700 text-white relative overflow-hidden">
+      <section className="py-20 min-h-[400px] md:min-h-[500px] flex items-center text-white relative overflow-hidden">
+         {/* Video Background */}
+         <video
+           autoPlay
+           loop
+           muted
+           playsInline
+           className="absolute inset-0 w-full h-full object-cover"
+         >
+           <source src="/dolphins.mov" type="video/mp4" />
+         </video>
+
+         {/* Dark Overlay for text readability */}
+         <div className="absolute inset-0 bg-sea-950/40" />
+
          {/* Content */}
          <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
             <h3 className="text-sea-300 font-bold tracking-widest uppercase mb-4 text-sm">{content.didYouKnow.title}</h3>
@@ -105,22 +119,67 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 {content.didYouKnow.text}
             </p>
          </div>
+      </section>
 
-         {/* Animated Waves */}
-         <div className="absolute bottom-0 left-0 w-full overflow-hidden" style={{ height: '100px' }}>
-            {/* Wave 1 - Back (slowest) */}
-            <svg className="wave-animation-slow absolute bottom-0" style={{ width: '200%', height: '100px' }} viewBox="0 0 1200 120" preserveAspectRatio="none">
-               <path d="M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"/>
-            </svg>
-            {/* Wave 2 - Middle */}
-            <svg className="wave-animation absolute bottom-0" style={{ width: '200%', height: '80px' }} viewBox="0 0 1200 120" preserveAspectRatio="none">
-               <path d="M0,80 C200,20 400,100 600,60 C800,20 1000,100 1200,80 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.15)"/>
-            </svg>
-            {/* Wave 3 - Front (fastest) */}
-            <svg className="wave-animation-fast absolute bottom-0" style={{ width: '200%', height: '60px' }} viewBox="0 0 1200 120" preserveAspectRatio="none">
-               <path d="M0,100 C300,60 600,100 900,60 C1050,40 1150,80 1200,100 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.2)"/>
-            </svg>
-         </div>
+      {/* On Board Experience Section */}
+      <section className="py-20 bg-sand-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 text-center mb-4">On Board Experience</h2>
+          <div className="w-20 h-1.5 bg-sea-500 mx-auto rounded-full mb-12"></div>
+
+          {/* Bento Grid - Explicit positioning */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[180px] md:auto-rows-[200px]">
+
+            {/* Drone Video - Large hero tile (col 1-2, row 1-2) */}
+            <div className="col-span-2 row-span-2 md:col-start-1 md:row-start-1 rounded-2xl overflow-hidden shadow-xl group">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              >
+                <source src="/drone.MP4" type="video/mp4" />
+              </video>
+            </div>
+
+            {/* Food Image 1 (col 3, row 1) */}
+            <div className="md:col-start-3 md:row-start-1 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/food/food_1.JPG"
+                alt="Fresh appetizers"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Food Image 2 (col 4, row 1) */}
+            <div className="md:col-start-4 md:row-start-1 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/food/food_2.jpg"
+                alt="Boat deck dining"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Food Image 3 (col 3, row 2) */}
+            <div className="md:col-start-3 md:row-start-2 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/food/food_3.jpg"
+                alt="Culinary experience"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Ambiente (col 4, row 2) */}
+            <div className="md:col-start-4 md:row-start-2 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/ambiente.jpg"
+                alt="Relaxing atmosphere"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
