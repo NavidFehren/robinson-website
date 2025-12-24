@@ -1,6 +1,6 @@
 export type Language = 'de' | 'en' | 'hr' | 'it';
 
-export type Page = 'home' | 'tours' | 'about' | 'gallery' | 'contact';
+export type Page = 'home' | 'tours' | 'destinations' | 'about' | 'gallery' | 'contact';
 
 export interface Tour {
   id: string;
@@ -10,6 +10,18 @@ export interface Tour {
   highlights: string[];
   included: string[];
   price: string;
+  image: string;
+  basePrice?: number;
+  extraPersonPrice?: number;
+  maxPersons?: number;
+}
+
+export interface Destination {
+  id: string;
+  name: string;
+  nickname?: string;
+  description: string;
+  highlights: string[];
   image: string;
 }
 
@@ -22,6 +34,7 @@ export interface Content {
   nav: {
     home: string;
     tours: string;
+    destinations: string;
     about: string;
     gallery: string;
     contact: string;
@@ -47,6 +60,9 @@ export interface Content {
       title: string;
       text: string;
     };
+    onBoardExperience: {
+      title: string;
+    };
   };
   tours: {
     title: string;
@@ -61,6 +77,11 @@ export interface Content {
       kidsText: string;
       bookButton: string;
     };
+  };
+  destinations: {
+    title: string;
+    subtitle: string;
+    items: Destination[];
   };
   about: {
     title: string;
@@ -99,13 +120,16 @@ export interface Content {
       disclaimer: string;
       success: string;
       options: {
-        islandHopping: string;
-        sunset: string;
+        fullDay: string;
+        halfDay: string;
         custom: string;
       }
     };
     info: {
       direct: string;
+      phone1: string;
+      phone2: string;
+      email: string;
       location: string;
       locationDesc: string;
     };

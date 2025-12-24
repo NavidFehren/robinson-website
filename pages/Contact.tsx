@@ -13,7 +13,7 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
     phone: '',
     date: '',
     guests: '2',
-    tourType: 'islandHopping',
+    tourType: 'fullDay',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -61,22 +61,31 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
             <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
               <h3 className="font-serif text-xl font-bold text-sea-950 mb-4">{content.info.direct}</h3>
               <div className="space-y-4">
-                <a href="tel:+385911234567" className="flex items-center group">
+                <a href={`tel:${content.info.phone1.replace(/\s/g, '')}`} className="flex items-center group">
                   <div className="bg-sea-100 p-3 rounded-full text-sea-600 group-hover:bg-sea-600 group-hover:text-white transition-colors">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div className="ml-4">
                     <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Call / WhatsApp</p>
-                    <p className="font-semibold text-sea-900">+385 91 123 4567</p>
+                    <p className="font-semibold text-sea-900">{content.info.phone1}</p>
                   </div>
                 </a>
-                <a href="mailto:info@robinson-losinj.com" className="flex items-center group">
+                <a href={`tel:${content.info.phone2.replace(/\s/g, '')}`} className="flex items-center group">
+                  <div className="bg-sea-100 p-3 rounded-full text-sea-600 group-hover:bg-sea-600 group-hover:text-white transition-colors">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Call</p>
+                    <p className="font-semibold text-sea-900">{content.info.phone2}</p>
+                  </div>
+                </a>
+                <a href={`mailto:${content.info.email}`} className="flex items-center group">
                   <div className="bg-sea-100 p-3 rounded-full text-sea-600 group-hover:bg-sea-600 group-hover:text-white transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div className="ml-4">
                     <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Email</p>
-                    <p className="font-semibold text-sea-900">info@robinson-losinj.com</p>
+                    <p className="font-semibold text-sea-900">{content.info.email}</p>
                   </div>
                 </a>
                 <div className="flex items-center">
@@ -138,8 +147,8 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{content.form.tourType}</label>
                     <select name="tourType" value={formData.tourType} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none">
-                      <option value="islandHopping">{content.form.options.islandHopping}</option>
-                      <option value="sunset">{content.form.options.sunset}</option>
+                      <option value="fullDay">{content.form.options.fullDay}</option>
+                      <option value="halfDay">{content.form.options.halfDay}</option>
                       <option value="custom">{content.form.options.custom}</option>
                     </select>
                   </div>

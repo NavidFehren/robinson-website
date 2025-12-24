@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Tours from './pages/Tours';
+import Destinations from './pages/Destinations';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
@@ -34,6 +35,7 @@ function App() {
       <main className="flex-grow">
         <Home content={currentContent.home} scrollToTours={() => scrollToSection('tours')} />
         <Tours content={currentContent.tours} openContact={() => scrollToSection('contact')} />
+        <Destinations content={currentContent.destinations} />
         <About content={currentContent.about} />
         <Gallery content={currentContent.gallery} />
         <Contact content={currentContent.contact} />

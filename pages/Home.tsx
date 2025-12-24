@@ -106,7 +106,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
            playsInline
            className="absolute inset-0 w-full h-full object-cover"
          >
-           <source src="/dolphins.mov" type="video/mp4" />
+           <source src="/dolphins.mov" type="video/quicktime" />
          </video>
 
          {/* Dark Overlay for text readability */}
@@ -124,7 +124,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
       {/* On Board Experience Section */}
       <section className="py-20 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 text-center mb-4">On Board Experience</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 text-center mb-4">{content.onBoardExperience.title}</h2>
           <div className="w-20 h-1.5 bg-sea-500 mx-auto rounded-full mb-12"></div>
 
           {/* Bento Grid - Explicit positioning */}

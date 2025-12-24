@@ -80,6 +80,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
           <nav className="hidden lg:flex space-x-6 xl:space-x-8 items-center">
             <button onClick={() => handleNav('home')} className={navClass()}>{content.home}</button>
             <button onClick={() => handleNav('tours')} className={navClass()}>{content.tours}</button>
+            <button onClick={() => handleNav('destinations')} className={navClass()}>{content.destinations}</button>
             <button onClick={() => handleNav('about')} className={navClass()}>{content.about}</button>
             <button onClick={() => handleNav('gallery')} className={navClass()}>{content.gallery}</button>
             <button onClick={() => handleNav('contact')} className={navClass()}>{content.contact}</button>
@@ -201,6 +202,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
               {[
                 { id: 'home', label: content.home },
                 { id: 'tours', label: content.tours },
+                { id: 'destinations', label: content.destinations },
                 { id: 'about', label: content.about },
                 { id: 'gallery', label: content.gallery },
                 { id: 'contact', label: content.contact },
