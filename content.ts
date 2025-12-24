@@ -113,6 +113,7 @@ export const content: Record<Language, Content> = {
         tourType: "Gewünschte Tour",
         message: "Nachricht / Besondere Wünsche",
         submit: "Anfrage senden",
+        disclaimer: "Ihre Anfrage ist unverbindlich.",
         success: "Danke! Wir melden uns innerhalb von 24 Stunden.",
         options: {
           islandHopping: "Inselhüpfen (Susak & Ilovik)",
@@ -248,6 +249,7 @@ export const content: Record<Language, Content> = {
         tourType: "Preferred Tour",
         message: "Message / Special Wishes",
         submit: "Send Inquiry",
+        disclaimer: "Your inquiry is non-binding.",
         success: "Thank you! We'll confirm availability within 24 hours.",
         options: {
           islandHopping: "Island Hopping (Susak & Ilovik)",
@@ -383,6 +385,7 @@ export const content: Record<Language, Content> = {
         tourType: "Željeni izlet",
         message: "Poruka / Posebne želje",
         submit: "Pošalji upit",
+        disclaimer: "Vaš upit je neobvezujući.",
         success: "Hvala! Potvrdit ćemo dostupnost unutar 24 sata.",
         options: {
           islandHopping: "Izlet na otoke (Susak & Ilovik)",
@@ -518,6 +521,7 @@ export const content: Record<Language, Content> = {
         tourType: "Escursione preferita",
         message: "Messaggio / Richieste speciali",
         submit: "Invia richiesta",
+        disclaimer: "La tua richiesta non è vincolante.",
         success: "Grazie! Confermeremo la disponibilità entro 24 ore.",
         options: {
           islandHopping: "Gita tra le isole (Susak & Ilovik)",

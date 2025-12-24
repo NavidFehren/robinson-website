@@ -94,6 +94,7 @@ export interface Content {
       tourType: string;
       message: string;
       submit: string;
+      disclaimer: string;
       success: string;
       options: {
         islandHopping: string;

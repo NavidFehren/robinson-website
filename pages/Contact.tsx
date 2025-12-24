@@ -148,6 +148,7 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
                   <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{content.form.message}</label>
                   <textarea name="message" rows={4} value={formData.message} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none resize-none"></textarea>
                 </div>
+                <p className="text-center text-sm text-gray-500 mb-3">{content.form.disclaimer}</p>
                 <button type="submit" className="w-full bg-sea-900 hover:bg-sea-800 text-white font-bold py-4 rounded-xl shadow-lg transition-all hover:scale-[1.01] flex justify-center items-center">
                   <Send className="w-5 h-5 mr-2" /> {content.form.submit}
                 </button>
