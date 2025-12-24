@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -8,11 +8,11 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import { content } from './content';
-import { Language } from './types';
 import { MessageSquare } from 'lucide-react';
+import { useLanguage } from './hooks/useLanguage';
 
 function App() {
-  const [lang, setLang] = useState<Language>('de');
+  const { lang, setLang } = useLanguage();
   
   const currentContent = content[lang];
 
