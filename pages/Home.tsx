@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Content } from '../types';
 import { ArrowRight, Users, SlidersHorizontal, Fish, MapPin } from 'lucide-react';
 
@@ -8,6 +8,14 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div id="home">
       {/* Full Screen Hero Section */}
@@ -17,6 +25,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             src="/hero.jpg"
             alt="Mali Losinj Sea"
             className="w-full h-full object-cover"
+            style={{ transform: `translateY(${scrollY * 0.3}px)` }}
           />
           {/* Gradient Overlay - stronger on bottom-left for text readability */}
           <div className="absolute inset-0 bg-gradient-to-tr from-sea-950/90 via-sea-950/40 to-transparent"></div>
