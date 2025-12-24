@@ -106,7 +106,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
            playsInline
            className="absolute inset-0 w-full h-full object-cover"
          >
-           <source src="/dolphins.mov" type="video/quicktime" />
+           <source src="/dolphins.mp4" type="video/mp4" />
          </video>
 
          {/* Dark Overlay for text readability */}
