@@ -10,14 +10,21 @@ const About: React.FC<AboutProps> = ({ content }) => {
     <section id="about" className="py-24 bg-white overflow-hidden">
        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-center">
-                <div className="md:w-1/2 relative">
-                    <div className="absolute top-4 left-4 w-full h-full border-2 border-sea-100 rounded-2xl z-0 transform translate-x-4 translate-y-4"></div>
-                    <img 
-                        src="/capitan.jpg" 
-                        alt="Captain" 
-                        className="relative z-10 rounded-2xl shadow-xl object-cover h-72 md:h-80 lg:h-96 xl:h-[500px] w-full" 
-                    />
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-start">
+                <div className="md:w-1/2">
+                    <div className="relative mb-12">
+                        <div className="absolute top-4 left-4 w-full h-full border-2 border-sea-100 rounded-2xl z-0 transform translate-x-4 translate-y-4"></div>
+                        <img
+                            src="/capitan.jpg"
+                            alt="Captain"
+                            className="relative z-10 rounded-2xl shadow-xl object-cover h-72 md:h-80 lg:h-96 xl:h-[500px] w-full"
+                        />
+                    </div>
+
+                    <div className="bg-sea-50 p-6 rounded-2xl border border-sea-100">
+                        <h3 className="font-serif text-xl font-bold text-sea-900 mb-3">{content.nameTitle}</h3>
+                        <p className="text-gray-600 leading-relaxed">{content.nameText}</p>
+                    </div>
                 </div>
                 <div className="md:w-1/2">
                     <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">{content.title}</span>

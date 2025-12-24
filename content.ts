@@ -101,7 +101,7 @@ export const content: Record<Language, Content> = {
           nickname: "Hawaii der Adria",
           description: "Die Insel Susak, gelegen im Kvarner-Archipel, ist einzigartig durch ihren sandigen Boden und die üppige Vegetation. Ohne Autos und Verkehrslärm bietet Susak Ruhe und eine authentische Atmosphäre – ideal für einen Familienausflug. Die Bucht Porat, wegen ihrer Schönheit oft als 'Hawaii' bezeichnet, bietet ein ruhiges Paradies mit drei Stränden, umgeben von silbernem Sand und kristallklarem Meer.",
           highlights: ["Sandstrände mit seichtem Wasser – perfekt für Kinder", "Autofreie Insel mit authentischer Atmosphäre", "Bucht Porat mit drei traumhaften Stränden", "Traditionelle Restaurants mit frischem Fisch", "Einzigartige Kultur, Trachten und Dialekt"],
-          image: "https://picsum.photos/seed/susak/800/600"
+          image: "/susak.jpg"
         },
         {
           id: "ilovik",
@@ -109,7 +109,7 @@ export const content: Record<Language, Content> = {
           nickname: "Insel der Blumen",
           description: "Die Insel Ilovik, südlich von Lošinj gelegen, ist bekannt für ihre üppige Natur, mediterranen Gärten und das authentische Inselleben. Ein Spaziergang durch die engen Gassen, umgeben von Oleandern und Steinhäusern, bietet ein einzigartiges Erlebnis von Ruhe und Schönheit. Die zahlreichen Buchten, wie Paržine, begeistern mit kristallklarem Wasser.",
           highlights: ["Mediterrane Gärten voller Oleander", "Kristallklare Buchten zum Schwimmen & Schnorcheln", "Klippenspringen für Abenteuerlustige", "Familiengeführte Restaurants mit lokaler Küche", "Romantische Inselatmosphäre"],
-          image: "https://picsum.photos/seed/ilovik/800/600"
+          image: "/ilovik.jpg"
         }
       ]
     },
@@ -274,7 +274,7 @@ export const content: Record<Language, Content> = {
           nickname: "Hawaii of the Adriatic",
           description: "Susak Island, located in the Kvarner archipelago, is unique for its sandy soil and lush vegetation. Without cars and traffic noise, Susak offers peace and an authentic atmosphere – ideal for a family outing. Porat Bay, often called 'Hawaii' for its beauty, offers a quiet paradise with three beaches, surrounded by silver sand and crystal-clear sea.",
           highlights: ["Sandy beaches with shallow water – perfect for kids", "Car-free island with authentic atmosphere", "Porat Bay with three stunning beaches", "Traditional restaurants with fresh fish", "Unique culture, costumes and dialect"],
-          image: "https://picsum.photos/seed/susak/800/600"
+          image: "/susak.jpg"
         },
         {
           id: "ilovik",
@@ -282,7 +282,7 @@ export const content: Record<Language, Content> = {
           nickname: "Island of Flowers",
           description: "Ilovik Island, located south of Lošinj, is known for its lush nature, Mediterranean gardens and authentic island life. A walk through the narrow streets, surrounded by oleanders and stone houses, offers a unique experience of peace and beauty. The numerous bays, such as Paržine, delight with crystal-clear water.",
           highlights: ["Mediterranean gardens full of oleanders", "Crystal-clear bays for swimming & snorkeling", "Cliff jumping for adventure seekers", "Family-run restaurants with local cuisine", "Romantic island atmosphere"],
-          image: "https://picsum.photos/seed/ilovik/800/600"
+          image: "/ilovik.jpg"
         }
       ]
     },
@@ -447,7 +447,7 @@ export const content: Record<Language, Content> = {
           nickname: "Havaji Jadrana",
           description: "Otok Susak, smješten u Kvarnerskom arhipelagu, jedinstven je po pješčanom tlu i bujnoj vegetaciji. Bez automobila i prometne buke, Susak nudi mir i autentičnu atmosferu – idealno za obiteljski izlet. Uvala Porat, često zvana 'Havaji' zbog svoje ljepote, nudi mirni raj s tri plaže, okružen srebrnim pijeskom i kristalno čistim morem.",
           highlights: ["Pješčane plaže s plitkom vodom – savršeno za djecu", "Otok bez automobila s autentičnom atmosferom", "Uvala Porat s tri prekrasne plaže", "Tradicionalni restorani sa svježom ribom", "Jedinstvena kultura, nošnje i dijalekt"],
-          image: "https://picsum.photos/seed/susak/800/600"
+          image: "/susak.jpg"
         },
         {
           id: "ilovik",
@@ -455,7 +455,7 @@ export const content: Record<Language, Content> = {
           nickname: "Otok cvijeća",
           description: "Otok Ilovik, smješten južno od Lošinja, poznat je po bujnoj prirodi, mediteranskim vrtovima i autentičnom otočkom životu. Šetnja uskim ulicama, okruženim oleandrima i kamenim kućama, nudi jedinstveni doživljaj mira i ljepote. Brojne uvale, poput Paržina, oduševljavaju kristalno čistom vodom.",
           highlights: ["Mediteranski vrtovi puni oleandara", "Kristalno čiste uvale za plivanje i ronjenje", "Skakanje sa stijena za avanturiste", "Obiteljski restorani s lokalnom kuhinjom", "Romantična otočka atmosfera"],
-          image: "https://picsum.photos/seed/ilovik/800/600"
+          image: "/ilovik.jpg"
         }
       ]
     },
@@ -620,7 +620,7 @@ export const content: Record<Language, Content> = {
           nickname: "Hawaii dell'Adriatico",
           description: "L'isola di Susak, situata nell'arcipelago del Quarnero, è unica per il suo terreno sabbioso e la vegetazione rigogliosa. Senza auto e rumore del traffico, Susak offre pace e un'atmosfera autentica – ideale per una gita in famiglia. La Baia Porat, spesso chiamata 'Hawaii' per la sua bellezza, offre un paradiso tranquillo con tre spiagge, circondate da sabbia argentata e mare cristallino.",
           highlights: ["Spiagge sabbiose con acqua bassa – perfette per i bambini", "Isola senza auto con atmosfera autentica", "Baia Porat con tre splendide spiagge", "Ristoranti tradizionali con pesce fresco", "Cultura unica, costumi e dialetto"],
-          image: "https://picsum.photos/seed/susak/800/600"
+          image: "/susak.jpg"
         },
         {
           id: "ilovik",
@@ -628,7 +628,7 @@ export const content: Record<Language, Content> = {
           nickname: "Isola dei Fiori",
           description: "L'isola di Ilovik, situata a sud di Lošinj, è nota per la sua natura rigogliosa, i giardini mediterranei e la vita autentica dell'isola. Una passeggiata per le stradine strette, circondate da oleandri e case in pietra, offre un'esperienza unica di pace e bellezza. Le numerose baie, come Paržine, incantano con acqua cristallina.",
           highlights: ["Giardini mediterranei pieni di oleandri", "Baie cristalline per nuotare e fare snorkeling", "Tuffi dalle scogliere per gli avventurosi", "Ristoranti a gestione familiare con cucina locale", "Atmosfera romantica dell'isola"],
-          image: "https://picsum.photos/seed/ilovik/800/600"
+          image: "/ilovik.jpg"
         }
       ]
     },

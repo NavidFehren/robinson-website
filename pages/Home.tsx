@@ -178,6 +178,44 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
+
+            {/* Row 3 - Boat Experience Images */}
+
+            {/* Boat from top (col 1, row 3) */}
+            <div className="md:col-start-1 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/boat_from_top.jpg"
+                alt="Boat from above"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Fresh catch (col 2, row 3) */}
+            <div className="md:col-start-2 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/fish.JPG"
+                alt="Fresh catch"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Front of boat (col 3, row 3) */}
+            <div className="md:col-start-3 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/front_of_boat.jpg"
+                alt="Boat front view"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            {/* Side of boat (col 4, row 3) */}
+            <div className="md:col-start-4 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src="/side_of_boat.jpg"
+                alt="Boat side view"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
           </div>
         </div>
       </section>
