@@ -31,14 +31,20 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           <div className="absolute inset-0 bg-gradient-to-tr from-sea-950/90 via-sea-950/40 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-28 max-w-3xl">
-          <div className="mb-6 inline-flex items-center px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-sm font-medium tracking-widest uppercase">
+        <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-12 sm:pb-28 max-w-3xl">
+          <div className="mb-4 sm:mb-6 inline-flex items-center px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-sm font-medium tracking-widest uppercase">
             Mali Lošinj • Croatia
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-2xl">
+          <h1
+            className="font-serif font-bold mb-4 sm:mb-6 leading-tight drop-shadow-2xl"
+            style={{ fontSize: 'clamp(2.25rem, 8vh, 4.5rem)' }}
+          >
             {content.hero.slogan}
           </h1>
-          <p className="text-lg md:text-xl mb-8 font-light text-sea-50/90 max-w-xl leading-relaxed">
+          <p
+            className="mb-6 sm:mb-8 font-light text-sea-50/90 max-w-xl leading-relaxed"
+            style={{ fontSize: 'clamp(1rem, 2.5vh, 1.25rem)' }}
+          >
             {content.hero.sub}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
