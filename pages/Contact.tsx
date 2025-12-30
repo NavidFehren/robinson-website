@@ -100,13 +100,13 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
 
         <div className="grid xl:grid-cols-[2fr_3fr] gap-6 lg:gap-8 xl:gap-12 items-start">
           {/* Left Column - Image and Contact Info Stacked */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-col gap-6">
             {/* Image */}
-            <div className="rounded-2xl overflow-hidden group">
+            <div className="rounded-2xl overflow-hidden group h-fit">
               <img
                 src="/contact.webp"
                 alt="Mali Lošinj Harbor"
-                className="w-full h-64 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_35%] transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-80 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
