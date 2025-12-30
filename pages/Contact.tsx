@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Content, Tour } from '../types';
-import { Phone, Mail, MapPin, Send, ChevronDown } from 'lucide-react';
+import { content as allContent } from '../content';
+import { Phone, Mail, MapPin, Send, ChevronDown, Loader2 } from 'lucide-react';
 
 interface ContactProps {
   content: Content['contact'];
@@ -18,6 +20,8 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     let value = e.target.value;
@@ -47,11 +51,38 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
     return `${tour.name} (${price}€)`;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setTimeout(() => {
+    setIsLoading(true);
+    setError('');
+
+    try {
+      const calculatedPrice = calculatePrice(formData.tourType, parseInt(formData.guests) || 1);
+      const enTour = allContent.en.tours.items.find(t => t.id === formData.tourType);
+      const hrTour = allContent.hr.tours.items.find(t => t.id === formData.tourType);
+      const tourName = `${hrTour?.name || ''} / ${enTour?.name || ''}`;
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+          date: formData.date,
+          guests: formData.guests,
+          tourType: tourName,
+          price: calculatedPrice ? `${calculatedPrice}€` : 'Na upit / On request',
+          message: formData.message || 'No message',
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
       setSubmitted(true);
-    }, 1000);
+    } catch (err) {
+      setError(content.form.error || 'Failed to send. Please try again or contact us directly.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -130,13 +161,13 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 animate-bounce">
                   <Send className="w-10 h-10 text-green-600" />
                 </div>
-                <h3 className="text-3xl font-bold text-green-800 mb-4">Success!</h3>
+                <h3 className="text-3xl font-bold text-green-800 mb-4">{content.form.successTitle}</h3>
                 <p className="text-gray-600 mb-8">{content.form.success}</p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="text-sea-600 font-semibold hover:text-sea-800"
                 >
-                  Send another inquiry
+                  {content.form.sendAnother}
                 </button>
               </div>
             ) : (
@@ -191,8 +222,25 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
                   <textarea name="message" rows={4} value={formData.message} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none resize-none"></textarea>
                 </div>
                 <p className="text-center text-sm text-gray-500 mb-3">{content.form.disclaimer}</p>
-                <button type="submit" className="w-full bg-gradient-to-b from-sea-950 to-sea-900 hover:from-sea-900 hover:to-sea-800 text-white font-bold py-4 rounded-xl shadow-lg transition-all hover:scale-[1.01] flex justify-center items-center">
-                  <Send className="w-5 h-5 mr-2" /> {content.form.submit}
+                {error && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4 text-center">
+                    {error}
+                  </div>
+                )}
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="w-full bg-gradient-to-b from-sea-950 to-sea-900 hover:from-sea-900 hover:to-sea-800 text-white font-bold py-4 rounded-xl shadow-lg transition-all hover:scale-[1.01] flex justify-center items-center disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" /> Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5 mr-2" /> {content.form.submit}
+                    </>
+                  )}
                 </button>
               </form>
             )}

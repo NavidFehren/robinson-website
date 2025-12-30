@@ -32,8 +32,22 @@ Single-page React app for Robinson Boat Tours (Mali Lošinj, Croatia).
 
 ### Multi-language
 
-Language switching is controlled by `lang` state in App.tsx. All content is accessed via `content[lang]` from content.ts. When adding new text, add entries to all three language objects (de, en, hr).
+Language switching is controlled by `lang` state in App.tsx. All content is accessed via `content[lang]` from content.ts. When adding new text, add entries to all four language objects (de, en, hr, it).
+
+### Contact Form
+
+Uses EmailJS for direct email delivery. Form component: `pages/Contact.tsx`.
 
 ### Environment
 
-Optional `GEMINI_API_KEY` in `.env.local` for AI features.
+Required in `.env.local`:
+```
+VITE_EMAILJS_SERVICE_ID=xxx   # EmailJS service ID
+VITE_EMAILJS_TEMPLATE_ID=xxx  # EmailJS template ID
+VITE_EMAILJS_PUBLIC_KEY=xxx   # EmailJS public key
+```
+
+Optional:
+```
+GEMINI_API_KEY=xxx            # For AI features
+```

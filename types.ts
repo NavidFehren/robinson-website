@@ -125,6 +125,9 @@ export interface Content {
       submit: string;
       disclaimer: string;
       success: string;
+      successTitle: string;
+      sendAnother: string;
+      error: string;
       options: {
         fullDay: string;
         halfDay: string;
