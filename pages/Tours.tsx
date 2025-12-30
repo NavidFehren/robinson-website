@@ -60,7 +60,7 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-sea-900 mb-3 flex items-center text-sm uppercase tracking-wider"><Ship className="w-4 h-4 mr-2 text-sea-500"/> Included</h4>
+                        <h4 className="font-bold text-sea-900 mb-3 flex items-center text-sm uppercase tracking-wider"><Ship className="w-4 h-4 mr-2 text-sea-500"/> {content.info.includedTitle}</h4>
                         <ul className="space-y-2">
                             {tour.included.map((inc, i) => (
                                 <li key={i} className="text-gray-600 text-sm flex items-start">

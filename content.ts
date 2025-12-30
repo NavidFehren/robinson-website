@@ -82,6 +82,7 @@ export const content: Record<Language, Content> = {
         }
       ],
       info: {
+        includedTitle: "Inklusive",
         bringTitle: "Was Sie mitbringen sollten",
         bringText: "Badesachen, Handtuch, Sonnenschutz, Hut, Kamera.",
         foodTitle: "Verpflegung",
@@ -255,6 +256,7 @@ export const content: Record<Language, Content> = {
         }
       ],
       info: {
+        includedTitle: "Included",
         bringTitle: "What to bring",
         bringText: "Swimwear, towel, sunscreen, hat, camera.",
         foodTitle: "Food & Drink",
@@ -428,6 +430,7 @@ export const content: Record<Language, Content> = {
         }
       ],
       info: {
+        includedTitle: "Uključeno",
         bringTitle: "Što ponijeti",
         bringText: "Kupaći kostim, ručnik, krema za sunčanje, kapa, kamera.",
         foodTitle: "Hrana i piće",
@@ -601,6 +604,7 @@ export const content: Record<Language, Content> = {
         }
       ],
       info: {
+        includedTitle: "Incluso",
         bringTitle: "Cosa portare",
         bringText: "Costume, asciugamano, protezione solare, cappello, macchina fotografica.",
         foodTitle: "Cibo e bevande",
