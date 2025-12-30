@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
 
   return (
     <>
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 safe-top ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-6'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-6'}`} style={{ top: 'env(safe-area-inset-top, 0px)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           
@@ -178,7 +178,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
 
     {/* Mobile Menu - Full Screen Overlay (outside header for correct fixed positioning) */}
     {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50">
+        <div className="lg:hidden fixed inset-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
           {/* Menu with gradient background - slides in together */}
           <div className="h-full flex flex-col menu-slide-in bg-gradient-to-br from-sea-600 via-sea-700 to-sea-900">
             {/* Header with close button and logo */}

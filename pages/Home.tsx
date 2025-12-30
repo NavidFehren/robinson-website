@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Content } from '../types';
-import { ArrowRight, Users, SlidersHorizontal, Fish, MapPin } from 'lucide-react';
+import { ArrowRight, Users, SlidersHorizontal, Fish, MapPin, Sparkles } from 'lucide-react';
 
 interface HomeProps {
   content: Content['home'];
@@ -127,8 +127,13 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
       {/* On Board Experience Section */}
       <section className="py-20 bg-sand-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 text-center mb-4">{content.onBoardExperience.title}</h2>
-          <div className="w-20 h-1.5 bg-sea-500 mx-auto rounded-full mb-12"></div>
+          <div className="text-center mb-12">
+            <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+              <Sparkles className="w-4 h-4 inline-block mr-2" />
+              {content.onBoardExperience.sectionLabel}
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950">{content.onBoardExperience.title}</h2>
+          </div>
 
           {/* Bento Grid - Explicit positioning */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[180px] md:auto-rows-[200px]">

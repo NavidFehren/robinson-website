@@ -59,6 +59,10 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
+          <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+            <Mail className="w-4 h-4 inline-block mr-2" />
+            {content.sectionLabel}
+          </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 mb-4">{content.title}</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.subtitle}</p>
         </div>

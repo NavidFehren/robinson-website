@@ -14,7 +14,7 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
         <div className="text-center mb-16">
           <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
             <MapPin className="w-4 h-4 inline-block mr-2" />
-            Destinations
+            {content.sectionLabel}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 mb-4">{content.title}</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.subtitle}</p>
@@ -28,7 +28,7 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
               className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
             >
               {/* Image */}
-              <div className="lg:w-1/2 relative">
+              <div className="lg:w-1/2 relative mb-8 lg:mb-0">
                 <div className={`absolute top-4 ${index % 2 === 0 ? 'left-4' : 'right-4'} w-full h-full border-2 border-sea-200 rounded-2xl z-0 transform ${index % 2 === 0 ? 'translate-x-4' : '-translate-x-4'} translate-y-4`}></div>
                 <img
                   src={destination.image}

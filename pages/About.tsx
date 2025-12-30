@@ -1,5 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
+import { Users } from 'lucide-react';
 
 interface AboutProps {
   content: Content['about'];
@@ -22,13 +23,16 @@ const About: React.FC<AboutProps> = ({ content }) => {
                         />
                     </div>
 
-                    <div className="bg-sea-50 p-6 rounded-2xl border border-sea-100">
+                    <div className="hidden md:block bg-sea-50 p-6 rounded-2xl border border-sea-100">
                         <h3 className="font-serif text-xl font-bold text-sea-900 mb-3">{content.nameTitle}</h3>
                         <p className="text-gray-600 leading-relaxed">{content.nameText}</p>
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                    <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">{content.title}</span>
+                    <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+                      <Users className="w-4 h-4 inline-block mr-2" />
+                      {content.sectionLabel}
+                    </span>
                     <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 mb-8">{content.storyTitle}</h2>
                     <p className="text-gray-600 text-lg leading-relaxed mb-8">{content.storyText}</p>
                     
@@ -42,6 +46,11 @@ const About: React.FC<AboutProps> = ({ content }) => {
                                 </span>
                             ))}
                         </div>
+                    </div>
+
+                    <div className="block md:hidden bg-sea-50 p-6 rounded-2xl border border-sea-100 mb-8">
+                        <h3 className="font-serif text-xl font-bold text-sea-900 mb-3">{content.nameTitle}</h3>
+                        <p className="text-gray-600 leading-relaxed">{content.nameText}</p>
                     </div>
 
                     <div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Content } from '../types';
-import { X, Instagram } from 'lucide-react';
+import { X, Instagram, Camera } from 'lucide-react';
 
 interface GalleryProps {
   content: Content['gallery'];
@@ -59,8 +59,9 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
 
           {/* Center Column - Instagram CTA */}
           <div className="flex flex-col items-center justify-center text-center py-12">
-            <span className="uppercase tracking-[0.2em] text-sm text-sea-600 mb-4 font-medium">
-              {content.instagram.tagline}
+            <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+              <Camera className="w-4 h-4 inline-block mr-2" />
+              {content.instagram.sectionLabel}
             </span>
             <h3 className="font-serif text-3xl lg:text-4xl text-sea-950 mb-8 leading-tight">
               {content.instagram.heading}
@@ -102,8 +103,9 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
 
         {/* Instagram CTA */}
         <div className="text-center py-8">
-          <span className="uppercase tracking-[0.2em] text-sm text-sea-600 mb-3 font-medium block">
-            {content.instagram.tagline}
+          <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+            <Camera className="w-4 h-4 inline-block mr-2" />
+            {content.instagram.sectionLabel}
           </span>
           <h3 className="font-serif text-2xl text-sea-950 mb-6 leading-tight">
             {content.instagram.heading}

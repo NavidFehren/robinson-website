@@ -37,12 +37,14 @@ export const content: Record<Language, Content> = {
         text: "Rund 200 Delfine leben ständig in den Gewässern rund um Lošinj. Die Chancen stehen gut, sie zu sehen!"
       },
       onBoardExperience: {
-        title: "An Bord Erlebnis"
+        title: "An Bord Erlebnis",
+        sectionLabel: "An Bord"
       }
     },
     tours: {
       title: "Unsere Touren",
       subtitle: "Wählen Sie Ihr perfektes Inselerlebnis",
+      sectionLabel: "Erlebnisse",
       items: [
         {
           id: "fullDay",
@@ -95,6 +97,7 @@ export const content: Record<Language, Content> = {
     destinations: {
       title: "Unsere Reiseziele",
       subtitle: "Entdecken Sie die schönsten Inseln der Adria",
+      sectionLabel: "Reiseziele",
       items: [
         {
           id: "susak",
@@ -116,6 +119,7 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: "Über Uns",
+      sectionLabel: "Über Uns",
       storyTitle: "Unsere Geschichte",
       storyText: "Alles begann mit einem alten Boot aus dem Jahr 1988 – etwas in die Jahre gekommen, aber voller Charme und noch mehr Charakter. Wir, die Familie des Kapitäns, haben es mit viel Liebe und der Unterstützung lieber Freunde restauriert, ihm neues Leben eingehaucht und es in ein echtes kleines Juwel des Meeres verwandelt. Heute transportiert dieses Boot nicht nur Passagiere – es trägt Erinnerungen, Lachen und die Liebe unserer Familie.",
       captainTitle: "Unser Team",
@@ -132,6 +136,7 @@ export const content: Record<Language, Content> = {
       instagram: {
         tagline: "Bleiben Sie auf dem Laufenden",
         heading: "Wir sind auf Instagram",
+        sectionLabel: "Galerie",
         buttonText: "@robinsonboattours",
         url: "https://instagram.com/robinsonboattours"
       }
@@ -139,6 +144,7 @@ export const content: Record<Language, Content> = {
     contact: {
       title: "Kontakt & Buchen",
       subtitle: "Planen Sie Ihr Abenteuer mit uns",
+      sectionLabel: "Kontakt",
       form: {
         name: "Name",
         email: "E-Mail Adresse",
@@ -211,12 +217,14 @@ export const content: Record<Language, Content> = {
         text: "Around 200 dolphins live in the waters around Lošinj. Chances are good to see them!"
       },
       onBoardExperience: {
-        title: "On Board Experience"
+        title: "On Board Experience",
+        sectionLabel: "On Board"
       }
     },
     tours: {
       title: "Our Tours",
       subtitle: "Choose your perfect island experience",
+      sectionLabel: "Experiences",
       items: [
         {
           id: "fullDay",
@@ -269,6 +277,7 @@ export const content: Record<Language, Content> = {
     destinations: {
       title: "Our Destinations",
       subtitle: "Discover the most beautiful islands of the Adriatic",
+      sectionLabel: "Destinations",
       items: [
         {
           id: "susak",
@@ -290,6 +299,7 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: "About Us",
+      sectionLabel: "About Us",
       storyTitle: "Our Story",
       storyText: "It all started with an old boat from 1988 – a bit weathered, but full of charm and even more character. We, the captain's family, restored it with love and the support of dear friends, breathed new life into it and transformed it into a true little jewel of the sea. Today, this boat doesn't just carry passengers – it carries memories, laughter and our family's love.",
       captainTitle: "Our Team",
@@ -306,6 +316,7 @@ export const content: Record<Language, Content> = {
       instagram: {
         tagline: "Stay up-to-date",
         heading: "We're on Instagram",
+        sectionLabel: "Gallery",
         buttonText: "@robinsonboattours",
         url: "https://instagram.com/robinsonboattours"
       }
@@ -313,6 +324,7 @@ export const content: Record<Language, Content> = {
     contact: {
       title: "Contact & Booking",
       subtitle: "Plan your adventure with us",
+      sectionLabel: "Contact",
       form: {
         name: "Name",
         email: "Email Address",
@@ -385,12 +397,14 @@ export const content: Record<Language, Content> = {
         text: "Oko 200 dupina živi u vodama oko Lošinja. Šanse da ih vidite su velike!"
       },
       onBoardExperience: {
-        title: "Doživljaj na brodu"
+        title: "Doživljaj na brodu",
+        sectionLabel: "Na Brodu"
       }
     },
     tours: {
       title: "Naši Izleti",
       subtitle: "Odaberite svoj savršeni doživljaj",
+      sectionLabel: "Doživljaji",
       items: [
         {
           id: "fullDay",
@@ -443,6 +457,7 @@ export const content: Record<Language, Content> = {
     destinations: {
       title: "Naša odredišta",
       subtitle: "Otkrijte najljepše otoke Jadrana",
+      sectionLabel: "Odredišta",
       items: [
         {
           id: "susak",
@@ -464,6 +479,7 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: "O Nama",
+      sectionLabel: "O Nama",
       storyTitle: "Naša priča",
       storyText: "Sve je počelo sa starim brodom iz 1988. – pomalo istrošen, ali pun šarma i još više karaktera. Mi, obitelj kapetana, obnovili smo ga s ljubavlju i uz podršku dragih prijatelja, udahnuli mu novi život i pretvorili ga u pravi mali dragulj mora. Danas ovaj brod ne prevozi samo putnike – nosi uspomene, smijeh i ljubav naše obitelji.",
       captainTitle: "Naš tim",
@@ -480,6 +496,7 @@ export const content: Record<Language, Content> = {
       instagram: {
         tagline: "Budite u toku",
         heading: "Pratite nas na Instagramu",
+        sectionLabel: "Galerija",
         buttonText: "@robinsonboattours",
         url: "https://instagram.com/robinsonboattours"
       }
@@ -487,6 +504,7 @@ export const content: Record<Language, Content> = {
     contact: {
       title: "Kontakt i Rezervacije",
       subtitle: "Isplanirajte svoju avanturu",
+      sectionLabel: "Kontakt",
       form: {
         name: "Ime",
         email: "Email adresa",
@@ -559,12 +577,14 @@ export const content: Record<Language, Content> = {
         text: "Circa 200 delfini vivono nelle acque intorno a Lošinj. Le probabilità di vederli sono alte!"
       },
       onBoardExperience: {
-        title: "Esperienza a bordo"
+        title: "Esperienza a bordo",
+        sectionLabel: "A Bordo"
       }
     },
     tours: {
       title: "Le nostre escursioni",
       subtitle: "Scegliete la vostra esperienza perfetta tra le isole",
+      sectionLabel: "Esperienze",
       items: [
         {
           id: "fullDay",
@@ -617,6 +637,7 @@ export const content: Record<Language, Content> = {
     destinations: {
       title: "Le nostre destinazioni",
       subtitle: "Scoprite le isole più belle dell'Adriatico",
+      sectionLabel: "Destinazioni",
       items: [
         {
           id: "susak",
@@ -638,6 +659,7 @@ export const content: Record<Language, Content> = {
     },
     about: {
       title: "Chi siamo",
+      sectionLabel: "Chi Siamo",
       storyTitle: "La nostra storia",
       storyText: "Tutto è iniziato con una vecchia barca del 1988 – un po' usurata, ma piena di fascino e ancora più carattere. Noi, la famiglia del capitano, l'abbiamo restaurata con amore e con il supporto di cari amici, le abbiamo dato nuova vita e l'abbiamo trasformata in un vero piccolo gioiello del mare. Oggi questa barca non trasporta solo passeggeri – porta ricordi, risate e l'amore della nostra famiglia.",
       captainTitle: "Il nostro team",
@@ -654,6 +676,7 @@ export const content: Record<Language, Content> = {
       instagram: {
         tagline: "Restate aggiornati",
         heading: "Siamo su Instagram",
+        sectionLabel: "Galleria",
         buttonText: "@robinsonboattours",
         url: "https://instagram.com/robinsonboattours"
       }
@@ -661,6 +684,7 @@ export const content: Record<Language, Content> = {
     contact: {
       title: "Contatti e Prenotazioni",
       subtitle: "Pianificate la vostra avventura con noi",
+      sectionLabel: "Contatti",
       form: {
         name: "Nome",
         email: "Indirizzo email",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
-import { Clock, Users as UsersIcon, Check, Map, Ship } from 'lucide-react';
+import { Clock, Users as UsersIcon, Check, Map, Ship, Anchor } from 'lucide-react';
 
 interface ToursProps {
   content: Content['tours'];
@@ -12,8 +12,11 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
     <section id="tours" className="py-24 bg-sea-50/50">
       {/* Header */}
       <div className="text-center px-4 mb-16">
+        <span className="text-sea-500 font-bold tracking-widest uppercase text-sm mb-2 block">
+          <Anchor className="w-4 h-4 inline-block mr-2" />
+          {content.sectionLabel}
+        </span>
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-sea-950 mb-4">{content.title}</h2>
-        <div className="w-20 h-1.5 bg-sea-500 mx-auto rounded-full mb-6"></div>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">{content.subtitle}</p>
       </div>
 

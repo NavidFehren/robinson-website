@@ -62,11 +62,13 @@ export interface Content {
     };
     onBoardExperience: {
       title: string;
+      sectionLabel: string;
     };
   };
   tours: {
     title: string;
     subtitle: string;
+    sectionLabel: string;
     items: Tour[];
     info: {
       bringTitle: string;
@@ -81,10 +83,12 @@ export interface Content {
   destinations: {
     title: string;
     subtitle: string;
+    sectionLabel: string;
     items: Destination[];
   };
   about: {
     title: string;
+    sectionLabel: string;
     storyTitle: string;
     storyText: string;
     captainTitle: string;
@@ -101,6 +105,7 @@ export interface Content {
     instagram: {
       tagline: string;
       heading: string;
+      sectionLabel: string;
       buttonText: string;
       url: string;
     };
@@ -108,6 +113,7 @@ export interface Content {
   contact: {
     title: string;
     subtitle: string;
+    sectionLabel: string;
     form: {
       name: string;
       email: string;
