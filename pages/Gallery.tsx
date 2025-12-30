@@ -70,7 +70,7 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
               href={content.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-sea-900 text-white px-8 py-3 rounded-full hover:bg-sea-800 transition-colors font-medium"
+              className="inline-flex items-center gap-2 bg-gradient-to-b from-sea-950 to-sea-900 text-white px-8 py-3 rounded-full hover:from-sea-900 hover:to-sea-800 transition-colors font-medium"
             >
               <Instagram className="w-5 h-5" />
               {content.instagram.buttonText}
@@ -114,7 +114,7 @@ const Gallery: React.FC<GalleryProps> = ({ content }) => {
             href={content.instagram.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-sea-900 text-white px-6 py-3 rounded-full hover:bg-sea-800 transition-colors font-medium"
+            className="inline-flex items-center gap-2 bg-gradient-to-b from-sea-950 to-sea-900 text-white px-6 py-3 rounded-full hover:from-sea-900 hover:to-sea-800 transition-colors font-medium"
           >
             <Instagram className="w-5 h-5" />
             {content.instagram.buttonText}
