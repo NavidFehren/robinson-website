@@ -61,7 +61,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
 
   return (
     <>
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 safe-top ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           
@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
             </div>
             <div className="flex flex-col">
               <span className={`font-serif text-xl font-bold tracking-tight leading-none ${scrolled ? 'text-sea-900' : 'text-white'}`}>ROBINSON</span>
-              <span className={`text-[10px] font-medium tracking-[0.2em] uppercase ${scrolled ? 'text-sea-600' : 'text-sea-100'}`}>Boat Tours • Lošinj</span>
+              <span className={`text-[10px] font-medium tracking-[0.2em] uppercase ${scrolled ? 'text-sea-600' : 'text-sea-100'}`}>Boat Tours • Mali Lošinj</span>
             </div>
           </div>
 

@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900 bg-white">
+    <div className="flex flex-col min-h-screen font-sans text-gray-900">
       <Header 
         lang={lang} 
         setLang={setLang} 

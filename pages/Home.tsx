@@ -23,7 +23,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
         <div className="absolute inset-0 z-0">
           <img
             src="/hero.jpg"
-            alt="Mali Losinj Sea"
+            alt="Mali Lošinj Sea"
             className="w-full h-full object-cover"
             style={{ transform: `translateY(${scrollY * 0.3}px)` }}
           />
@@ -34,7 +34,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
         <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-12 sm:pb-28 max-w-3xl">
           <h1
             className="font-serif font-bold mb-4 sm:mb-6 leading-tight drop-shadow-2xl"
-            style={{ fontSize: 'clamp(2.25rem, 8vh, 4.5rem)' }}
+            style={{ fontSize: 'clamp(1.75rem, 6vw, 4rem)' }}
           >
             {content.hero.slogan}
           </h1>

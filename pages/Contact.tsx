@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Content, Tour } from '../types';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, ChevronDown } from 'lucide-react';
 
 interface ContactProps {
   content: Content['contact'];
@@ -154,7 +154,15 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{content.form.date}</label>
-                    <input required type="date" name="date" value={formData.date} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none" />
+                    <input
+                      type="date"
+                      name="date"
+                      value={formData.date}
+                      onChange={handleChange}
+                      min={new Date().toISOString().split('T')[0]}
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none"
+                    />
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -164,11 +172,14 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{content.form.tourType}</label>
-                    <select name="tourType" value={formData.tourType} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none">
-                      <option value="fullDay">{getOptionLabel('fullDay')}</option>
-                      <option value="halfDay">{getOptionLabel('halfDay')}</option>
-                      <option value="custom">{getOptionLabel('custom')}</option>
-                    </select>
+                    <div className="relative">
+                      <select name="tourType" value={formData.tourType} onChange={handleChange} className="w-full px-4 py-3 pr-10 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none appearance-none cursor-pointer">
+                        <option value="fullDay">{getOptionLabel('fullDay')}</option>
+                        <option value="halfDay">{getOptionLabel('halfDay')}</option>
+                        <option value="custom">{getOptionLabel('custom')}</option>
+                      </select>
+                      <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                    </div>
                   </div>
                 </div>
                 <div>
