@@ -30,7 +30,7 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
                   src={tour.image}
                   alt={tour.name}
                   loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-2.5 rounded-full text-sm font-bold text-sea-900 shadow-md">
                    {tour.price}

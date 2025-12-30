@@ -71,11 +71,11 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
           {/* Left Column - Image and Contact Info Stacked */}
           <div className="flex flex-col gap-6">
             {/* Image */}
-            <div className="rounded-2xl overflow-hidden">
+            <div className="rounded-2xl overflow-hidden group">
               <img
                 src="/contact.webp"
                 alt="Mali Lošinj Harbor"
-                className="w-full h-64 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_35%]"
+                className="w-full h-64 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_35%] transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 

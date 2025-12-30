@@ -156,7 +156,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
               <img
                 src="/food/food_1.JPG"
                 alt="Fresh appetizers"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -166,7 +166,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/food/food_2.webp"
                 loading="lazy"
                 alt="Boat deck dining"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -176,7 +176,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/food/food_3.webp"
                 loading="lazy"
                 alt="Culinary experience"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -186,7 +186,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/ambiente.webp"
                 loading="lazy"
                 alt="Relaxing atmosphere"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -198,7 +198,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/boat_from_top.webp"
                 loading="lazy"
                 alt="Boat from above"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -207,7 +207,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
               <img
                 src="/fish.JPG"
                 alt="Fresh catch"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -217,7 +217,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/front_of_boat.webp"
                 loading="lazy"
                 alt="Boat front view"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -227,7 +227,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
                 src="/side_of_boat.webp"
                 loading="lazy"
                 alt="Boat side view"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           </div>
