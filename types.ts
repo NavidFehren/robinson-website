@@ -55,6 +55,8 @@ export interface Content {
     testimonial: {
       quote: string;
       author: string;
+      tripAdvisorLink: string;
+      googleReviewsLink: string;
     };
     didYouKnow: {
       title: string;

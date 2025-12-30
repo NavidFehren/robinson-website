@@ -30,7 +30,9 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "Der schönste Tag unseres Urlaubs! Der Kapitän zeigte uns Buchten, die wir alleine nie gefunden hätten.",
-        author: "Familie Müller, Deutschland"
+        author: "Familie Müller, Deutschland",
+        tripAdvisorLink: "TripAdvisor",
+        googleReviewsLink: "Google"
       },
       didYouKnow: {
         title: "Wussten Sie schon?",
@@ -217,7 +219,9 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "The best day of our holiday! The captain showed us bays we never would have found alone.",
-        author: "The Müller Family, Germany"
+        author: "The Müller Family, Germany",
+        tripAdvisorLink: "TripAdvisor",
+        googleReviewsLink: "Google"
       },
       didYouKnow: {
         title: "Did you know?",
@@ -404,7 +408,9 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "Najljepši dan našeg odmora! Kapetan nam je pokazao uvale koje sami nikada ne bismo pronašli.",
-        author: "Obitelj Müller, Njemačka"
+        author: "Obitelj Müller, Njemačka",
+        tripAdvisorLink: "TripAdvisor",
+        googleReviewsLink: "Google"
       },
       didYouKnow: {
         title: "Jeste li znali?",
@@ -591,7 +597,9 @@ export const content: Record<Language, Content> = {
       },
       testimonial: {
         quote: "La giornata più bella della nostra vacanza! Il capitano ci ha mostrato baie che non avremmo mai trovato da soli.",
-        author: "Famiglia Müller, Germania"
+        author: "Famiglia Müller, Germania",
+        tripAdvisorLink: "TripAdvisor",
+        googleReviewsLink: "Google"
       },
       didYouKnow: {
         title: "Lo sapevate?",

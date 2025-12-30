@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(npx sharp-cli:*)",
-      "mcp__gh__get_issue"
+      "mcp__gh__get_issue",
+      "WebFetch(domain:pagespeed.web.dev)"
     ]
   }
 }
