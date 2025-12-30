@@ -38,7 +38,7 @@ function App() {
         <Destinations content={currentContent.destinations} />
         <About content={currentContent.about} />
         <Gallery content={currentContent.gallery} />
-        <Contact content={currentContent.contact} />
+        <Contact content={currentContent.contact} tours={currentContent.tours.items} />
         <FAQ
           title={currentContent.contact.faqTitle}
           faqs={currentContent.contact.faqs}

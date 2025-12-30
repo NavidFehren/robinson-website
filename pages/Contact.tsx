@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Content } from '../types';
+import { Content, Tour } from '../types';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 
 interface ContactProps {
   content: Content['contact'];
+  tours: Tour[];
 }
 
-const Contact: React.FC<ContactProps> = ({ content }) => {
+const Contact: React.FC<ContactProps> = ({ content, tours }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,6 +28,23 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
     }
 
     setFormData({ ...formData, [e.target.name]: value });
+  };
+
+  const calculatePrice = (tourId: string, guests: number): number | null => {
+    const tour = tours.find(t => t.id === tourId);
+    if (!tour?.basePrice) return null;
+    const extraGuests = Math.max(0, guests - (tour.maxPersons || 8));
+    return tour.basePrice + extraGuests * (tour.extraPersonPrice || 0);
+  };
+
+  const getOptionLabel = (tourId: string): string => {
+    const guests = parseInt(formData.guests) || 1;
+    const price = calculatePrice(tourId, guests);
+    const tour = tours.find(t => t.id === tourId);
+    if (!price || !tour) {
+      return content.form.options[tourId as keyof typeof content.form.options];
+    }
+    return `${tour.name} (${price}€)`;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -147,9 +165,9 @@ const Contact: React.FC<ContactProps> = ({ content }) => {
                   <div>
                     <label className="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">{content.form.tourType}</label>
                     <select name="tourType" value={formData.tourType} onChange={handleChange} className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:ring-2 focus:ring-sea-500 outline-none">
-                      <option value="fullDay">{content.form.options.fullDay}</option>
-                      <option value="halfDay">{content.form.options.halfDay}</option>
-                      <option value="custom">{content.form.options.custom}</option>
+                      <option value="fullDay">{getOptionLabel('fullDay')}</option>
+                      <option value="halfDay">{getOptionLabel('halfDay')}</option>
+                      <option value="custom">{getOptionLabel('custom')}</option>
                     </select>
                   </div>
                 </div>
