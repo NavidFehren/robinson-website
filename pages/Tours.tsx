@@ -23,9 +23,10 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
             <div key={tour.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 flex flex-col xl:flex-row group transition-all hover:shadow-2xl hover:border-sea-100">
               {/* Image Side */}
               <div className="xl:w-2/5 relative h-64 md:h-72 xl:h-auto overflow-hidden">
-                <img 
-                  src={tour.image} 
-                  alt={tour.name} 
+                <img
+                  src={tour.image}
+                  alt={tour.name}
+                  loading="lazy"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm px-5 py-2.5 rounded-full text-sm font-bold text-sea-900 shadow-md">

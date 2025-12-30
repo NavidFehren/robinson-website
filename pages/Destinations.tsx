@@ -33,6 +33,7 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
                 <img
                   src={destination.image}
                   alt={destination.name}
+                  loading="lazy"
                   className="relative z-10 rounded-2xl shadow-xl object-cover h-64 md:h-80 lg:h-96 w-full"
                 />
                 {destination.nickname && (

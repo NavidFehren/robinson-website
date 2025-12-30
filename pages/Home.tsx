@@ -22,7 +22,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
       <section className="relative h-screen flex items-end text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/hero.jpg"
+            src="/hero.webp"
             alt="Mali Lošinj Sea"
             className="w-full h-full object-cover"
             style={{ transform: `translateY(${scrollY * 0.3}px)` }}
@@ -158,7 +158,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Food Image 2 (col 4, row 1) */}
             <div className="md:col-start-4 md:row-start-1 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/food/food_2.jpg"
+                src="/food/food_2.webp"
+                loading="lazy"
                 alt="Boat deck dining"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -167,7 +168,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Food Image 3 (col 3, row 2) */}
             <div className="md:col-start-3 md:row-start-2 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/food/food_3.jpg"
+                src="/food/food_3.webp"
+                loading="lazy"
                 alt="Culinary experience"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -176,7 +178,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Ambiente (col 4, row 2) */}
             <div className="md:col-start-4 md:row-start-2 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/ambiente.jpg"
+                src="/ambiente.webp"
+                loading="lazy"
                 alt="Relaxing atmosphere"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -187,7 +190,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Boat from top (col 1, row 3) */}
             <div className="md:col-start-1 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/boat_from_top.jpg"
+                src="/boat_from_top.webp"
+                loading="lazy"
                 alt="Boat from above"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -205,7 +209,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Front of boat (col 3, row 3) */}
             <div className="md:col-start-3 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/front_of_boat.jpg"
+                src="/front_of_boat.webp"
+                loading="lazy"
                 alt="Boat front view"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -214,7 +219,8 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Side of boat (col 4, row 3) */}
             <div className="md:col-start-4 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/side_of_boat.jpg"
+                src="/side_of_boat.webp"
+                loading="lazy"
                 alt="Boat side view"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
