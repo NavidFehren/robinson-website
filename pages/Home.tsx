@@ -32,9 +32,6 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
         </div>
 
         <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-12 sm:pb-28 max-w-3xl">
-          <div className="mb-4 sm:mb-6 inline-flex items-center px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-sm font-medium tracking-widest uppercase">
-            Mali Lošinj • Croatia
-          </div>
           <h1
             className="font-serif font-bold mb-4 sm:mb-6 leading-tight drop-shadow-2xl"
             style={{ fontSize: 'clamp(2.25rem, 8vh, 4.5rem)' }}
