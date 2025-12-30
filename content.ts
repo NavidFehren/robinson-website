@@ -52,7 +52,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Schwimmstopps in versteckten Buchten", "Insel Susak & Bucht Porat", "Blumeninsel Ilovik", "Bis zu 12 Personen möglich"],
           included: ["Willkommensdrink (Aperitif)", "Frisches Obst (morgens & nachmittags)", "Canapés", "3 Getränke pro Person (Bier, Saft, Wasser, Wein, Cocktail)"],
           price: "550€ (bis 8 Pers.) | +50€ pro weitere Person",
-          image: "https://picsum.photos/seed/island/800/600",
+          image: "/tours/all_day_tour.jpeg",
           basePrice: 550,
           extraPersonPrice: 50,
           maxPersons: 8
@@ -65,7 +65,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Flexible Zeitwahl (Vormittag oder Nachmittag)", "Versteckte Buchten erkunden", "Schwimmen & Schnorcheln", "Bis zu 12 Personen möglich"],
           included: ["Willkommensdrink (Aperitif)", "Frisches saisonales Obst", "2 Getränke pro Person (Saft, Wasser, Bier, Wein, Cocktail)"],
           price: "350€ (bis 8 Pers.) | +30€ pro weitere Person",
-          image: "https://picsum.photos/seed/sunset/800/600",
+          image: "/tours/half_day_tour.png",
           basePrice: 350,
           extraPersonPrice: 30,
           maxPersons: 8
@@ -78,7 +78,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Private Feiern & Events", "Romantische Sonnenuntergangsfahrten", "Geburtstage & besondere Anlässe", "Völlig freie Routenwahl"],
           included: ["Persönliche Routenplanung", "Kapitän", "Individuelle Getränke- & Snackauswahl"],
           price: "Preis auf Anfrage",
-          image: "https://picsum.photos/seed/custom/800/600"
+          image: "/tours/custom_tour.jpeg"
         }
       ],
       info: {
@@ -225,7 +225,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Swimming stops in hidden bays", "Susak Island & Porat Bay", "Ilovik flower island", "Up to 12 people possible"],
           included: ["Welcome drink (aperitif)", "Fresh fruit (morning & afternoon)", "Canapés", "3 drinks per person (beer, juice, water, wine, cocktail)"],
           price: "550€ (up to 8 ppl) | +50€ per extra person",
-          image: "https://picsum.photos/seed/island/800/600",
+          image: "/tours/all_day_tour.jpeg",
           basePrice: 550,
           extraPersonPrice: 50,
           maxPersons: 8
@@ -238,7 +238,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Flexible time choice (morning or afternoon)", "Explore hidden bays", "Swimming & snorkeling", "Up to 12 people possible"],
           included: ["Welcome drink (aperitif)", "Fresh seasonal fruit", "2 drinks per person (juice, water, beer, wine, cocktail)"],
           price: "350€ (up to 8 ppl) | +30€ per extra person",
-          image: "https://picsum.photos/seed/sunset/800/600",
+          image: "/tours/half_day_tour.png",
           basePrice: 350,
           extraPersonPrice: 30,
           maxPersons: 8
@@ -251,7 +251,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Private parties & events", "Romantic sunset cruises", "Birthdays & special occasions", "Complete route freedom"],
           included: ["Personal route planning", "Captain", "Custom drink & snack selection"],
           price: "Price on request",
-          image: "https://picsum.photos/seed/custom/800/600"
+          image: "/tours/custom_tour.jpeg"
         }
       ],
       info: {
@@ -398,7 +398,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Kupanje u skrivenim uvalama", "Otok Susak i uvala Porat", "Otok cvijeća Ilovik", "Do 12 osoba moguće"],
           included: ["Piće dobrodošlice (aperitiv)", "Svježe voće (ujutro i popodne)", "Canapéi", "3 pića po osobi (pivo, sok, voda, vino, koktel)"],
           price: "550€ (do 8 os.) | +50€ po dodatnoj osobi",
-          image: "https://picsum.photos/seed/island/800/600",
+          image: "/tours/all_day_tour.jpeg",
           basePrice: 550,
           extraPersonPrice: 50,
           maxPersons: 8
@@ -411,7 +411,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Fleksibilan izbor vremena (jutro ili popodne)", "Istraživanje skrivenih uvala", "Plivanje i ronjenje", "Do 12 osoba moguće"],
           included: ["Piće dobrodošlice (aperitiv)", "Svježe sezonsko voće", "2 pića po osobi (sok, voda, pivo, vino, koktel)"],
           price: "350€ (do 8 os.) | +30€ po dodatnoj osobi",
-          image: "https://picsum.photos/seed/sunset/800/600",
+          image: "/tours/half_day_tour.png",
           basePrice: 350,
           extraPersonPrice: 30,
           maxPersons: 8
@@ -424,7 +424,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Privatne proslave i eventi", "Romantične vožnje zalaskom sunca", "Rođendani i posebne prilike", "Potpuna sloboda odabira rute"],
           included: ["Osobno planiranje rute", "Kapetan", "Individualni izbor pića i grickalica"],
           price: "Cijena na upit",
-          image: "https://picsum.photos/seed/custom/800/600"
+          image: "/tours/custom_tour.jpeg"
         }
       ],
       info: {
@@ -571,7 +571,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Soste per nuotare in baie nascoste", "Isola di Susak e Baia Porat", "Isola dei fiori Ilovik", "Fino a 12 persone possibili"],
           included: ["Drink di benvenuto (aperitivo)", "Frutta fresca (mattina e pomeriggio)", "Canapé", "3 bevande a persona (birra, succo, acqua, vino, cocktail)"],
           price: "550€ (fino a 8 pers.) | +50€ per persona extra",
-          image: "https://picsum.photos/seed/island/800/600",
+          image: "/tours/all_day_tour.jpeg",
           basePrice: 550,
           extraPersonPrice: 50,
           maxPersons: 8
@@ -584,7 +584,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Scelta flessibile dell'orario (mattina o pomeriggio)", "Esplorazione di baie nascoste", "Nuoto e snorkeling", "Fino a 12 persone possibili"],
           included: ["Drink di benvenuto (aperitivo)", "Frutta fresca di stagione", "2 bevande a persona (succo, acqua, birra, vino, cocktail)"],
           price: "350€ (fino a 8 pers.) | +30€ per persona extra",
-          image: "https://picsum.photos/seed/sunset/800/600",
+          image: "/tours/half_day_tour.png",
           basePrice: 350,
           extraPersonPrice: 30,
           maxPersons: 8
@@ -597,7 +597,7 @@ export const content: Record<Language, Content> = {
           highlights: ["Feste ed eventi privati", "Romantiche crociere al tramonto", "Compleanni e occasioni speciali", "Completa libertà di percorso"],
           included: ["Pianificazione personale del percorso", "Capitano", "Selezione personalizzata di bevande e snack"],
           price: "Prezzo su richiesta",
-          image: "https://picsum.photos/seed/custom/800/600"
+          image: "/tours/custom_tour.jpeg"
         }
       ],
       info: {
