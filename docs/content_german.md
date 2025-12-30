@@ -99,7 +99,7 @@ Ilovik ist ideal für Tagesausflüge mit dem Boot, bei denen Besucher die entspa
 
 - **Telefon 1:** +385 97 7119 736
 - **Telefon 2:** +385 91 9869 368
-- **E-Mail:** goranmarkovac@gmail.com
+- **E-Mail:** animamaris.adriatic@gmail.com
 - **Standort:** Mali Lošinj, Hrvatska (Kroatien)
 
 ---

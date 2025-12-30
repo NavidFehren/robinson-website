@@ -88,8 +88,8 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                     </div>
                     <div className="ml-4">
                       <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">Email</span>
-                      <a href="mailto:info@robinson-losinj.com" className="text-white font-medium hover:text-white/70 transition-colors">
-                        info@robinson-losinj.com
+                      <a href="mailto:animamaris.adriatic@gmail.com" className="text-white font-medium hover:text-white/70 transition-colors">
+                        animamaris.adriatic@gmail.com
                       </a>
                     </div>
                   </div>

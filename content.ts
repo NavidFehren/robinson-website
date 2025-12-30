@@ -169,7 +169,7 @@ export const content: Record<Language, Content> = {
         direct: "Direkter Kontakt",
         phone1: "+385 97 7119 736",
         phone2: "+385 91 9869 368",
-        email: "goranmarkovac@gmail.com",
+        email: "animamaris.adriatic@gmail.com",
         location: "Treffpunkt",
         locationDesc: "Wir treffen uns im Haupthafen von Mali Lošinj."
       },
@@ -357,7 +357,7 @@ export const content: Record<Language, Content> = {
         direct: "Direct Contact",
         phone1: "+385 97 7119 736",
         phone2: "+385 91 9869 368",
-        email: "goranmarkovac@gmail.com",
+        email: "animamaris.adriatic@gmail.com",
         location: "Meeting Point",
         locationDesc: "We meet at the main harbor of Mali Lošinj."
       },
@@ -545,7 +545,7 @@ export const content: Record<Language, Content> = {
         direct: "Direktan kontakt",
         phone1: "+385 97 7119 736",
         phone2: "+385 91 9869 368",
-        email: "goranmarkovac@gmail.com",
+        email: "animamaris.adriatic@gmail.com",
         location: "Mjesto sastanka",
         locationDesc: "Sastajemo se u glavnoj luci Mali Lošinj."
       },
@@ -733,7 +733,7 @@ export const content: Record<Language, Content> = {
         direct: "Contatto diretto",
         phone1: "+385 97 7119 736",
         phone2: "+385 91 9869 368",
-        email: "goranmarkovac@gmail.com",
+        email: "animamaris.adriatic@gmail.com",
         location: "Punto d'incontro",
         locationDesc: "Ci incontriamo nel porto principale di Mali Lošinj."
       },
