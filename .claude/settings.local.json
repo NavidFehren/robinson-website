@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx sharp-cli:*)"
+      "Bash(npx sharp-cli:*)",
+      "mcp__gh__get_issue"
     ]
   }
 }
