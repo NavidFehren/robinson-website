@@ -179,7 +179,6 @@ export const content: Record<Language, Content> = {
       faqs: [
         { question: "Was sollen wir mitbringen?", answer: "Badesachen, Handtuch, Sonnenschutz. Schnorchelausrüstung stellen wir." },
         { question: "Ist Verpflegung inklusive?", answer: "Wir bieten Wasser und kleine Snacks. Mittagessen kann arrangiert werden." },
-        { question: "Sind Hunde erlaubt?", answer: "Bitte fragen Sie uns – meistens sind brave Hunde willkommen." },
         { question: "Was passiert bei schlechtem Wetter?", answer: "Sicherheit geht vor. Wir kontaktieren Sie für Alternativen." },
         { question: "Gibt es Schatten an Bord?", answer: "Ja, an Bord gibt es schattige Plätze." },
         { question: "Gibt es eine Toilette an Bord?", answer: "Ja, es gibt eine Toilette an Bord." },
@@ -367,7 +366,6 @@ export const content: Record<Language, Content> = {
       faqs: [
         { question: "What should we bring?", answer: "Swimwear, towel, sunscreen. We provide snorkel gear." },
         { question: "Is food included?", answer: "Snacks and drinks are included. Lunch can be arranged." },
-        { question: "Are dogs allowed?", answer: "Please ask us – usually well-behaved dogs are welcome." },
         { question: "What if the weather is bad?", answer: "Safety first. We will contact you to reschedule." },
         { question: "Is there shade on board?", answer: "Yes, there are shaded areas on board." },
         { question: "Is there a toilet on board?", answer: "Yes, there is a toilet on board." },
@@ -555,7 +553,6 @@ export const content: Record<Language, Content> = {
       faqs: [
         { question: "Što trebamo ponijeti?", answer: "Kupaći, ručnik, kremu za sunčanje. Opremu za ronjenje imamo." },
         { question: "Je li hrana uključena?", answer: "Nudimo vodu i grickalice. Ručak se može dogovoriti." },
-        { question: "Smiju li psi na brod?", answer: "Molimo pitajte nas - obično su dobro odgojeni psi dobrodošli." },
         { question: "Što ako je loše vrijeme?", answer: "Sigurnost je prva. Kontaktirat ćemo vas za promjenu termina." },
         { question: "Ima li hlada na brodu?", answer: "Da, na brodu ima zasjenjenih mjesta." },
         { question: "Ima li WC na brodu?", answer: "Da, na brodu postoji WC." },
@@ -743,7 +740,6 @@ export const content: Record<Language, Content> = {
       faqs: [
         { question: "Cosa dobbiamo portare?", answer: "Costume, asciugamano, protezione solare. L'attrezzatura snorkeling la forniamo noi." },
         { question: "Il cibo è incluso?", answer: "Offriamo acqua e snack. Il pranzo può essere organizzato." },
-        { question: "Sono ammessi i cani?", answer: "Chiedeteci – di solito i cani ben educati sono benvenuti." },
         { question: "Cosa succede in caso di maltempo?", answer: "La sicurezza prima di tutto. Vi contatteremo per riprogrammare." },
         { question: "C'è ombra a bordo?", answer: "Sì, ci sono zone ombreggiate a bordo." },
         { question: "C'è un bagno a bordo?", answer: "Sì, c'è un bagno a bordo." },
