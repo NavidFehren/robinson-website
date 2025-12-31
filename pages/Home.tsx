@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           <div className="absolute inset-0 bg-gradient-to-tr from-sea-950/90 via-sea-950/40 to-transparent"></div>
         </div>
 
-        <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-12 sm:pb-28 max-w-3xl">
+        <div className="relative z-10 text-left px-6 sm:px-10 lg:px-16 pb-8 sm:pb-16 max-w-3xl">
           <h1
             className="font-serif font-bold mb-4 sm:mb-6 leading-tight drop-shadow-2xl"
             style={{ fontSize: 'clamp(1.75rem, 6vw, 4rem)' }}
