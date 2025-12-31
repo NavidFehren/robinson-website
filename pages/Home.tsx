@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Content } from '../types';
 import { ArrowRight, Users, SlidersHorizontal, Fish, MapPin, Sparkles } from 'lucide-react';
+import LazyVideo from '../components/LazyVideo';
 
 interface HomeProps {
   content: Content['home'];
@@ -24,6 +25,7 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
           <img
             src="/hero.webp"
             alt="Mali Lošinj Sea"
+            fetchPriority="high"
             className="w-full h-full object-cover"
             style={{ transform: `translateY(${scrollY * 0.3}px)` }}
           />
@@ -135,15 +137,11 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
       {/* Did You Know / Fact Section */}
       <section className="py-20 min-h-[400px] md:min-h-[500px] flex items-center text-white relative overflow-hidden">
          {/* Video Background */}
-         <video
-           autoPlay
-           loop
-           muted
-           playsInline
+         <LazyVideo
+           src="/dolphins.mp4"
+           poster="/video-posters/dolphins-poster.webp"
            className="absolute inset-0 w-full h-full object-cover"
-         >
-           <source src="/dolphins.mp4" type="video/mp4" />
-         </video>
+         />
 
          {/* Dark Overlay for text readability */}
          <div className="absolute inset-0 bg-sea-950/40" />
@@ -173,22 +171,19 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
 
             {/* Drone Video - Large hero tile (col 1-2, row 1-2) */}
             <div className="col-span-2 row-span-2 md:col-start-1 md:row-start-1 rounded-2xl overflow-hidden shadow-xl group">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
+              <LazyVideo
+                src="/drone_comp.mp4"
+                poster="/video-posters/drone-poster.webp"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              >
-                <source src="/drone_comp.mp4" type="video/mp4" />
-              </video>
+              />
             </div>
 
             {/* Food Image 1 (col 3, row 1) */}
             <div className="md:col-start-3 md:row-start-1 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/food/food_1.JPG"
+                src="/food/food_1.webp"
                 alt="Fresh appetizers"
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -238,8 +233,9 @@ const Home: React.FC<HomeProps> = ({ content, scrollToTours }) => {
             {/* Fresh catch (col 2, row 3) */}
             <div className="md:col-start-2 md:row-start-3 rounded-xl overflow-hidden shadow-lg group">
               <img
-                src="/fish.JPG"
+                src="/fish.webp"
                 alt="Fresh catch"
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>

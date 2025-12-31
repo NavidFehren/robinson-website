@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sea colors */
+  --color-sea-50: #ecfeff;
+  --color-sea-100: #cffafe;
+  --color-sea-200: #a5f3fc;
+  --color-sea-300: #67e8f9;
+  --color-sea-400: #22d3ee;
+  --color-sea-500: #06b6d4;
+  --color-sea-600: #0891b2;
+  --color-sea-700: #0e7490;
+  --color-sea-800: #155e75;
+  --color-sea-900: #164e63;
+  --color-sea-950: #083344;
+
+  /* Sand colors */
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f7f3e8;
+  --color-sand-500: #d4c5a3;
+  --color-sand-900: #5c5238;
+
+  /* Font families */
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-serif: 'Merriweather', serif;
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0e7490;
+}
+
+/* Animated waves */
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.wave-animation {
+  animation: wave 25s linear infinite;
+}
+
+.wave-animation-slow {
+  animation: wave 30s linear infinite;
+}
+
+.wave-animation-fast {
+  animation: wave 18s linear infinite;
+}
+
+/* Mobile menu animation */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.menu-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Safe area inset for notched devices */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
