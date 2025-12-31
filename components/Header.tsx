@@ -180,7 +180,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
     {isMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-50" style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}>
           {/* Menu with gradient background - slides in together */}
-          <div className="h-full flex flex-col menu-slide-in bg-gradient-to-br from-sea-600 via-sea-700 to-sea-900">
+          <div className="h-full flex flex-col menu-slide-in gradient-primary">
             {/* Header with close button and logo */}
             <div className="flex justify-between items-center px-4 py-6">
               <button
