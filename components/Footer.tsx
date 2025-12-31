@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Instagram, Mail, Phone, MapPin, Anchor } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin, Anchor, MessageCircle } from 'lucide-react';
 import { Language, LegalPage } from '../types';
 import { content } from '../content';
 import LegalModal from './LegalModal';
@@ -96,18 +96,18 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 {lang === 'de' ? 'Kontaktieren Sie uns' : lang === 'hr' ? 'Kontaktirajte nas' : 'Contact Us'}
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Phone Card */}
+                {/* WhatsApp Card */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
                   <div className="flex items-start">
                     <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
-                      <Phone className="w-5 h-5" />
+                      <MessageCircle className="w-5 h-5" />
                     </div>
                     <div className="ml-4">
                       <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">
-                        {lang === 'de' ? 'Telefon' : lang === 'hr' ? 'Telefon' : 'Phone'}
+                        WhatsApp
                       </span>
-                      <a href="tel:+385911234567" className="text-white font-medium hover:text-white/70 transition-colors">
-                        +385 91 123 4567
+                      <a href="https://wa.me/385977119736" target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-white/70 transition-colors">
+                        +385 97 7119 736
                       </a>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                       <span className="block text-white/60 text-xs uppercase tracking-wider font-semibold mb-1">
                         {lang === 'de' ? 'Standort' : lang === 'hr' ? 'Lokacija' : 'Location'}
                       </span>
-                      <span className="text-white font-medium">Mali Lošinj Harbor, Croatia</span>
+                      <span className="text-white font-medium">Riva lošinjskih kapetana, Mali Lošinj, Croatia</span>
                     </div>
                   </div>
                 </div>

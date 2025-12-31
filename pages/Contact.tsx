@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Content, Tour } from '../types';
 import { content as allContent } from '../content';
-import { Phone, Mail, Send, ChevronDown, Loader2 } from 'lucide-react';
+import { Phone, Mail, Send, ChevronDown, Loader2, MessageCircle } from 'lucide-react';
 
 interface ContactProps {
   content: Content['contact'];
@@ -119,12 +119,12 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
             <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 xl:flex-1">
               <h3 className="font-serif text-xl font-bold text-sea-950 mb-4">{content.info.direct}</h3>
               <div className="space-y-4">
-                <a href={`tel:${content.info.phone1.replace(/\s/g, '')}`} className="flex items-center group">
+                <a href="https://wa.me/385977119736" target="_blank" rel="noopener noreferrer" className="flex items-center group">
                   <div className="bg-sea-100 p-3 rounded-full text-sea-600 group-hover:bg-sea-600 group-hover:text-white transition-colors">
-                    <Phone className="w-5 h-5" />
+                    <MessageCircle className="w-5 h-5" />
                   </div>
                   <div className="ml-4">
-                    <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Call / WhatsApp</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">WhatsApp</p>
                     <p className="font-semibold text-sea-900">{content.info.phone1}</p>
                   </div>
                 </a>
