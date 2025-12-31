@@ -141,8 +141,6 @@ export interface Content {
       phone1: string;
       phone2: string;
       email: string;
-      location: string;
-      locationDesc: string;
     };
     faqTitle: string;
     faqCtaSubtitle: string;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Content, Tour } from '../types';
 import { content as allContent } from '../content';
-import { Phone, Mail, MapPin, Send, ChevronDown, Loader2 } from 'lucide-react';
+import { Phone, Mail, Send, ChevronDown, Loader2 } from 'lucide-react';
 
 interface ContactProps {
   content: Content['contact'];
@@ -101,12 +101,17 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
         <div className="grid xl:grid-cols-[2fr_3fr] gap-6 lg:gap-8 xl:gap-12 items-start">
           {/* Left Column - Image and Contact Info Stacked */}
           <div className="flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-col gap-6">
-            {/* Image */}
-            <div className="rounded-2xl overflow-hidden group h-fit">
-              <img
-                src="/contact.webp"
-                alt="Mali Lošinj Harbor"
-                className="w-full h-80 md:h-72 lg:h-80 xl:h-[380px] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105"
+            {/* Google Maps Embed */}
+            <div className="rounded-2xl overflow-hidden h-80 md:h-72 lg:h-80 xl:h-[380px]">
+              <iframe
+                src="https://www.google.com/maps?q=Anima+Maris+-+Robinson,+Riva+lošinjskih+kapetana,+Mali+Lošinj,+Croatia&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Meeting Point - Mali Lošinj Harbor"
               />
             </div>
 
@@ -141,15 +146,6 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
                     <p className="font-semibold text-sea-900">{content.info.email}</p>
                   </div>
                 </a>
-                <div className="flex items-center">
-                  <div className="bg-sea-100 p-3 rounded-full text-sea-600">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">{content.info.location}</p>
-                    <p className="text-gray-700">{content.info.locationDesc}</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
