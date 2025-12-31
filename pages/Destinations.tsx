@@ -28,9 +28,8 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
               className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
             >
               {/* Image */}
-              <div className="lg:w-1/2 relative mb-8 lg:mb-0 group">
-                <div className={`absolute top-4 ${index % 2 === 0 ? 'left-4' : 'right-4'} w-full h-full border-2 border-sea-200 rounded-2xl z-0 transform ${index % 2 === 0 ? 'translate-x-4' : '-translate-x-4'} translate-y-4`}></div>
-                <div className="relative z-10 rounded-2xl shadow-xl overflow-hidden">
+              <div className="w-full lg:w-1/2 relative mb-8 lg:mb-0 group">
+                <div className="rounded-2xl shadow-xl overflow-hidden">
                   <img
                     src={destination.image}
                     alt={destination.name}
@@ -39,7 +38,7 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
                   />
                 </div>
                 {destination.nickname && (
-                  <div className="absolute top-6 left-6 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                  <div className="absolute top-6 left-6 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
                     <span className="flex items-center text-sea-700 font-semibold text-sm">
                       <Star className="w-4 h-4 mr-1 text-yellow-500 fill-yellow-500" />
                       {destination.nickname}
