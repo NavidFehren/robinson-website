@@ -52,7 +52,7 @@ export const content: Record<Language, Content> = {
           id: "fullDay",
           name: "Ganztägige Tour",
           duration: "10:00 – 18:00 Uhr",
-          description: "Erkunden Sie die einzigartigen Sandstrände von Susak und die charmante Blumeninsel Ilovik auf einer unvergesslichen Tagestour.",
+          description: "Erkunden Sie die einzigartigen Sandstrände von Susak oder die charmante Blumeninsel Ilovik auf einer unvergesslichen Tagestour.",
           highlights: ["Schwimmstopps in versteckten Buchten", "Insel Susak & Bucht Porat", "Blumeninsel Ilovik", "Bis zu 12 Personen möglich"],
           included: ["Willkommensdrink (Aperitif)", "Frisches Obst (morgens & nachmittags)", "Canapés", "3 Getränke pro Person (Bier, Saft, Wasser, Wein, Cocktail)"],
           price: "550€ (bis 8 Pers.) | +50€ pro weitere Person",
@@ -179,14 +179,14 @@ export const content: Record<Language, Content> = {
       faqCtaSubtitle: "Noch Fragen?",
       faqCtaButton: "Kontaktieren Sie uns",
       faqs: [
-        { question: "Was sollen wir mitbringen?", answer: "Badesachen, Handtuch, Sonnenschutz. Schnorchelausrüstung stellen wir." },
+        { question: "Was sollten wir für den Ausflug mitbringen?", answer: "Badesachen, ein Handtuch und Sonnenschutz, Schnorchelausrüstung – den Rest übernimmt das Meer." },
         { question: "Ist Verpflegung inklusive?", answer: "Wir bieten Wasser und kleine Snacks. Mittagessen kann arrangiert werden." },
         { question: "Was passiert bei schlechtem Wetter?", answer: "Sicherheit geht vor. Wir kontaktieren Sie für Alternativen." },
-        { question: "Gibt es Schatten an Bord?", answer: "Ja, an Bord gibt es schattige Plätze." },
+        { question: "Gibt es schattige Plätze an Bord?", answer: "Aber klar! Gemütliche schattige Plätze laden zum Durchatmen, Träumen oder zu einem kleinen Nickerchen ein – perfekt für euch und eure Kleinen." },
         { question: "Gibt es eine Toilette an Bord?", answer: "Ja, es gibt eine Toilette an Bord." },
-        { question: "Sind Kinder willkommen?", answer: "Ja, Kinder sind herzlich willkommen. Bitte gebt bei der Anfrage das Alter an." },
-        { question: "Dürfen wir eigene Getränke mitbringen?", answer: "Ja, gerne." },
-        { question: "Dürfen wir Musik hören?", answer: "Ja, natürlich." }
+        { question: "Ist der Ausflug auch für Kinder geeignet?", answer: "Unbedingt! Kinder sind bei uns herzlich willkommen. Damit wir alles optimal vorbereiten können, gebt uns bitte ihr Alter bei der Anfrage an. Kleine Seeräuber lieben unsere Touren ganz besonders." },
+        { question: "Können eigene Snacks und Getränke mitgebracht werden?", answer: "Sehr gerne. Sonne, Salzluft und Meer machen bekanntlich durstig. Je nach gebuchter Tour steht bereits eine unterschiedliche Menge an Getränken an Bord zur Verfügung – siehe Tour-Details. Zusätzliche eigene Getränke dürfen selbstverständlich mitgebracht werden." },
+        { question: "Ist es möglich, während der Fahrt Musik zu hören?", answer: "Aber natürlich. Das Boot verfügt über eine Musikanlage – und unser Kapitän ist nicht nur Steuermann, sondern auch DJ. Musikwünsche nehmen wir gerne entgegen – von Chill-Vibes bis Sommerklassiker." }
       ]
     }
   },
@@ -241,7 +241,7 @@ export const content: Record<Language, Content> = {
           id: "fullDay",
           name: "Full-Day Tour",
           duration: "10:00 – 18:00",
-          description: "Explore the unique sandy beaches of Susak and the charming flower island of Ilovik on an unforgettable day trip.",
+          description: "Explore the unique sandy beaches of Susak or the charming flower island of Ilovik on an unforgettable day trip.",
           highlights: ["Swimming stops in hidden bays", "Susak Island & Porat Bay", "Ilovik flower island", "Up to 12 people possible"],
           included: ["Welcome drink (aperitif)", "Fresh fruit (morning & afternoon)", "Canapés", "3 drinks per person (beer, juice, water, wine, cocktail)"],
           price: "550€ (up to 8 ppl) | +50€ per extra person",
@@ -368,14 +368,14 @@ export const content: Record<Language, Content> = {
       faqCtaSubtitle: "Still have questions?",
       faqCtaButton: "Contact us",
       faqs: [
-        { question: "What should we bring?", answer: "Swimwear, towel, sunscreen. We provide snorkel gear." },
+        { question: "What should we bring for the trip?", answer: "Swimwear, a towel, sunscreen, snorkel gear – the sea will take care of the rest." },
         { question: "Is food included?", answer: "Snacks and drinks are included. Lunch can be arranged." },
         { question: "What if the weather is bad?", answer: "Safety first. We will contact you to reschedule." },
-        { question: "Is there shade on board?", answer: "Yes, there are shaded areas on board." },
+        { question: "Are there shaded spots on board?", answer: "Absolutely! Cozy shaded spots invite you to relax, dream or take a little nap – perfect for you and your little ones." },
         { question: "Is there a toilet on board?", answer: "Yes, there is a toilet on board." },
-        { question: "Are children welcome?", answer: "Yes, children are very welcome. Please indicate their age when inquiring." },
-        { question: "Can we bring our own drinks?", answer: "Yes, you're welcome to." },
-        { question: "Can we listen to music?", answer: "Yes, of course." }
+        { question: "Is the trip suitable for children?", answer: "Absolutely! Children are very welcome. Please let us know their ages when booking so we can prepare everything perfectly. Little pirates love our tours especially." },
+        { question: "Can you bring your own snacks and drinks?", answer: "Of course. Sun, salty air and sea are known to make you thirsty. Depending on the tour booked, a selection of drinks is already available on board – see tour details. You're welcome to bring additional drinks of your own." },
+        { question: "Is it possible to listen to music during the trip?", answer: "Of course. The boat has a sound system – and our captain isn't just a helmsman, but also a DJ. We're happy to take music requests – from chill vibes to summer classics." }
       ]
     }
   },
@@ -430,7 +430,7 @@ export const content: Record<Language, Content> = {
           id: "fullDay",
           name: "Cjelodnevni izlet",
           duration: "10:00 – 18:00",
-          description: "Istražite jedinstvene pješčane plaže otoka Suska i šarmantni otok cvijeća Ilovik na nezaboravnom cjelodnevnom izletu.",
+          description: "Istražite jedinstvene pješčane plaže otoka Suska ili šarmantni otok cvijeća Ilovik na nezaboravnom cjelodnevnom izletu.",
           highlights: ["Kupanje u skrivenim uvalama", "Otok Susak i uvala Porat", "Otok cvijeća Ilovik", "Do 12 osoba moguće"],
           included: ["Piće dobrodošlice (aperitiv)", "Svježe voće (ujutro i popodne)", "Canapéi", "3 pića po osobi (pivo, sok, voda, vino, koktel)"],
           price: "550€ (do 8 os.) | +50€ po dodatnoj osobi",
@@ -557,14 +557,14 @@ export const content: Record<Language, Content> = {
       faqCtaSubtitle: "Imate još pitanja?",
       faqCtaButton: "Kontaktirajte nas",
       faqs: [
-        { question: "Što trebamo ponijeti?", answer: "Kupaći, ručnik, kremu za sunčanje. Opremu za ronjenje imamo." },
+        { question: "Što bismo trebali ponijeti za izlet?", answer: "Kupaći kostim, ručnik, kremu za sunčanje, opremu za ronjenje – za ostalo će se pobrinuti more." },
         { question: "Je li hrana uključena?", answer: "Nudimo vodu i grickalice. Ručak se može dogovoriti." },
         { question: "Što ako je loše vrijeme?", answer: "Sigurnost je prva. Kontaktirat ćemo vas za promjenu termina." },
-        { question: "Ima li hlada na brodu?", answer: "Da, na brodu ima zasjenjenih mjesta." },
+        { question: "Ima li zasjenjenih mjesta na brodu?", answer: "Naravno! Ugodna zasjenjena mjesta pozivaju na odmor, sanjarenje ili kratki drijemež – savršeno za vas i vaše mališane." },
         { question: "Ima li WC na brodu?", answer: "Da, na brodu postoji WC." },
-        { question: "Jesu li djeca dobrodošla?", answer: "Da, djeca su srdačno dobrodošla. Molimo navedite njihovu dob prilikom upita." },
-        { question: "Smijemo li donijeti vlastita pića?", answer: "Da, naravno." },
-        { question: "Smijemo li slušati glazbu?", answer: "Da, naravno." }
+        { question: "Je li izlet prikladan za djecu?", answer: "Naravno! Djeca su kod nas srdačno dobrodošla. Molimo vas da nam prilikom upita navedete njihovu dob kako bismo sve optimalno pripremili. Mali gusari posebno vole naše ture." },
+        { question: "Mogu li se ponijeti vlastite grickalice i pića?", answer: "Naravno. Sunce, slani zrak i more poznato izazivaju žeđ. Ovisno o odabranoj turi, određena količina pića već je dostupna na brodu – pogledajte detalje ture. Dodatna vlastita pića možete slobodno ponijeti." },
+        { question: "Je li moguće slušati glazbu tijekom vožnje?", answer: "Naravno. Brod ima glazbenu opremu – a naš kapetan nije samo kormilar, već i DJ. Rado primamo glazbene želje – od opuštenih vibri do ljetnih klasika." }
       ]
     }
   },
@@ -619,7 +619,7 @@ export const content: Record<Language, Content> = {
           id: "fullDay",
           name: "Escursione giornaliera",
           duration: "10:00 – 18:00",
-          description: "Esplorate le uniche spiagge sabbiose di Susak e l'affascinante isola dei fiori Ilovik in un'indimenticabile gita giornaliera.",
+          description: "Esplorate le uniche spiagge sabbiose di Susak o l'affascinante isola dei fiori Ilovik in un'indimenticabile gita giornaliera.",
           highlights: ["Soste per nuotare in baie nascoste", "Isola di Susak e Baia Porat", "Isola dei fiori Ilovik", "Fino a 12 persone possibili"],
           included: ["Drink di benvenuto (aperitivo)", "Frutta fresca (mattina e pomeriggio)", "Canapé", "3 bevande a persona (birra, succo, acqua, vino, cocktail)"],
           price: "550€ (fino a 8 pers.) | +50€ per persona extra",
@@ -746,14 +746,14 @@ export const content: Record<Language, Content> = {
       faqCtaSubtitle: "Hai ancora domande?",
       faqCtaButton: "Contattaci",
       faqs: [
-        { question: "Cosa dobbiamo portare?", answer: "Costume, asciugamano, protezione solare. L'attrezzatura snorkeling la forniamo noi." },
+        { question: "Cosa dovremmo portare per l'escursione?", answer: "Costume, asciugamano, protezione solare, attrezzatura snorkeling – al resto ci pensa il mare." },
         { question: "Il cibo è incluso?", answer: "Offriamo acqua e snack. Il pranzo può essere organizzato." },
         { question: "Cosa succede in caso di maltempo?", answer: "La sicurezza prima di tutto. Vi contatteremo per riprogrammare." },
-        { question: "C'è ombra a bordo?", answer: "Sì, ci sono zone ombreggiate a bordo." },
+        { question: "Ci sono posti ombreggiati a bordo?", answer: "Certo! Comodi posti all'ombra vi invitano a rilassarvi, sognare o fare un pisolino – perfetto per voi e i vostri piccoli." },
         { question: "C'è un bagno a bordo?", answer: "Sì, c'è un bagno a bordo." },
-        { question: "I bambini sono benvenuti?", answer: "Sì, i bambini sono i benvenuti. Indicate l'età al momento della richiesta." },
-        { question: "Possiamo portare le nostre bevande?", answer: "Sì, certo." },
-        { question: "Possiamo ascoltare musica?", answer: "Sì, naturalmente." }
+        { question: "L'escursione è adatta ai bambini?", answer: "Assolutamente! I bambini sono i benvenuti. Indicateci la loro età al momento della prenotazione così possiamo preparare tutto al meglio. I piccoli pirati adorano le nostre escursioni." },
+        { question: "Si possono portare snack e bevande proprie?", answer: "Certamente. Sole, aria salata e mare notoriamente fanno venire sete. A seconda del tour prenotato, una selezione di bevande è già disponibile a bordo – vedi dettagli tour. Siete liberi di portare ulteriori bevande." },
+        { question: "È possibile ascoltare musica durante il viaggio?", answer: "Naturalmente. La barca ha un impianto audio – e il nostro capitano non è solo timoniere, ma anche DJ. Accettiamo volentieri richieste musicali – dalle vibes rilassanti ai classici estivi." }
       ]
     }
   }
