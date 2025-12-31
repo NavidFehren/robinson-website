@@ -47,7 +47,7 @@ const FAQ: React.FC<FAQProps> = ({ title, faqs, ctaSubtitle, ctaButton, onScroll
         <div className="grid md:grid-cols-[320px_1fr] gap-6 items-start">
 
           {/* Left: Title Card (dark) */}
-          <div className="bg-sea-900 text-white rounded-2xl p-8 md:sticky md:top-24">
+          <div className="bg-gradient-to-br from-sea-600 via-sea-700 to-sea-900 text-white rounded-2xl p-8 md:sticky md:top-24">
             <h2 className="font-serif text-3xl lg:text-4xl font-bold mb-4">
               {title}
             </h2>

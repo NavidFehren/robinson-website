@@ -79,7 +79,7 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
                 <div className="mt-4 pt-8 border-t border-gray-100 flex justify-start">
                     <button
                         onClick={openContact}
-                        className="w-full md:w-auto bg-gradient-to-b from-sea-950 to-sea-900 hover:from-sea-900 hover:to-sea-800 text-white font-semibold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-sea-900/20 text-center"
+                        className="w-full md:w-auto gradient-primary text-white font-semibold py-4 px-10 rounded-full transition-all shadow-lg hover:shadow-sea-900/20 text-center"
                     >
                         {content.info.bookButton}
                     </button>
