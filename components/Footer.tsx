@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Instagram, Mail, Phone, MapPin, Anchor } from 'lucide-react';
-import { Language } from '../types';
+import { Language, LegalPage } from '../types';
+import { content } from '../content';
+import LegalModal from './LegalModal';
 
 interface FooterProps {
   lang: Language;
 }
 
 const Footer: React.FC<FooterProps> = ({ lang }) => {
+  const [activeLegalPage, setActiveLegalPage] = useState<LegalPage | null>(null);
+  const t = content[lang];
   return (
     <>
       {/* Wave Decoration */}
@@ -24,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
       </div>
 
       {/* Main Footer */}
-      <footer className="gradient-primary text-white pt-12 pb-8 -mt-px">
+      <footer className="gradient-primary-static text-white pt-12 pb-8 -mt-px">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12 mb-12">
 
@@ -154,14 +158,41 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 &copy; {new Date().getFullYear()} Robinson Boat Tours. All rights reserved.
               </p>
               <div className="flex items-center space-x-4 mt-4 md:mt-0">
-                <a href="#" className="hover:text-white/70 transition-colors">Privacy Policy</a>
+                <button
+                  onClick={() => setActiveLegalPage('imprint')}
+                  className="hover:text-white/70 transition-colors cursor-pointer"
+                >
+                  {t.footer.imprint}
+                </button>
                 <span className="text-white/20">|</span>
-                <a href="#" className="hover:text-white/70 transition-colors">Terms of Service</a>
+                <button
+                  onClick={() => setActiveLegalPage('privacy')}
+                  className="hover:text-white/70 transition-colors cursor-pointer"
+                >
+                  {t.footer.privacy}
+                </button>
+                <span className="text-white/20">|</span>
+                <button
+                  onClick={() => setActiveLegalPage('terms')}
+                  className="hover:text-white/70 transition-colors cursor-pointer"
+                >
+                  {t.footer.terms}
+                </button>
               </div>
             </div>
           </div>
         </div>
       </footer>
+
+      {/* Legal Modal */}
+      {activeLegalPage && (
+        <LegalModal
+          isOpen={!!activeLegalPage}
+          onClose={() => setActiveLegalPage(null)}
+          title={t.legal[activeLegalPage].title}
+          content={t.legal[activeLegalPage].content}
+        />
+      )}
     </>
   );
 };

@@ -30,6 +30,23 @@ export interface FaqItem {
   answer: string;
 }
 
+export type LegalPage = 'imprint' | 'privacy' | 'terms';
+
+export interface LegalContent {
+  imprint: {
+    title: string;
+    content: string;
+  };
+  privacy: {
+    title: string;
+    content: string;
+  };
+  terms: {
+    title: string;
+    content: string;
+  };
+}
+
 export interface Content {
   nav: {
     home: string;
@@ -73,12 +90,7 @@ export interface Content {
     sectionLabel: string;
     items: Tour[];
     info: {
-      bringTitle: string;
-      bringText: string;
-      foodTitle: string;
-      foodText: string;
-      kidsTitle: string;
-      kidsText: string;
+      includedTitle: string;
       bookButton: string;
     };
   };
@@ -147,4 +159,10 @@ export interface Content {
     faqCtaButton: string;
     faqs: FaqItem[];
   };
+  footer: {
+    imprint: string;
+    privacy: string;
+    terms: string;
+  };
+  legal: LegalContent;
 }

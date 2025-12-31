@@ -89,26 +89,6 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
           ))}
         </div>
 
-        {/* General Info */}
-        <div className="mt-20 bg-white rounded-[2rem] p-10 border border-gray-100 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-10">
-                <div className="flex flex-col items-center text-center">
-                    <div className="w-12 h-12 bg-sand-100 rounded-full flex items-center justify-center mb-4 text-sand-800 font-bold font-serif text-xl">1</div>
-                    <h3 className="font-serif font-bold text-lg mb-2 text-sea-950">{content.info.bringTitle}</h3>
-                    <p className="text-gray-500 text-sm">{content.info.bringText}</p>
-                </div>
-                <div className="flex flex-col items-center text-center border-l-0 md:border-l border-gray-100">
-                    <div className="w-12 h-12 bg-sand-100 rounded-full flex items-center justify-center mb-4 text-sand-800 font-bold font-serif text-xl">2</div>
-                    <h3 className="font-serif font-bold text-lg mb-2 text-sea-950">{content.info.foodTitle}</h3>
-                    <p className="text-gray-500 text-sm">{content.info.foodText}</p>
-                </div>
-                <div className="flex flex-col items-center text-center border-l-0 md:border-l border-gray-100">
-                    <div className="w-12 h-12 bg-sand-100 rounded-full flex items-center justify-center mb-4 text-sand-800 font-bold font-serif text-xl">3</div>
-                    <h3 className="font-serif font-bold text-lg mb-2 text-sea-950">{content.info.kidsTitle}</h3>
-                    <p className="text-gray-500 text-sm">{content.info.kidsText}</p>
-                </div>
-            </div>
-        </div>
       </div>
     </section>
   );

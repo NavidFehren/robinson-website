@@ -87,12 +87,6 @@ export const content: Record<Language, Content> = {
       ],
       info: {
         includedTitle: "Inklusive",
-        bringTitle: "Was Sie mitbringen sollten",
-        bringText: "Badesachen, Handtuch, Sonnenschutz, Hut, Kamera.",
-        foodTitle: "Verpflegung",
-        foodText: "Snacks und Getränke inklusive. Mittagessen in Inselrestaurants möglich.",
-        kidsTitle: "Für alle geeignet",
-        kidsText: "Kinder und ältere Gäste sind herzlich willkommen.",
         bookButton: "Erlebnis buchen"
       }
     },
@@ -186,6 +180,107 @@ export const content: Record<Language, Content> = {
         { question: "Können eigene Snacks und Getränke mitgebracht werden?", answer: "Sehr gerne. Sonne, Salzluft und Meer machen bekanntlich durstig. Je nach gebuchter Tour steht bereits eine unterschiedliche Menge an Getränken an Bord zur Verfügung – siehe Tour-Details. Zusätzliche eigene Getränke dürfen selbstverständlich mitgebracht werden." },
         { question: "Ist es möglich, während der Fahrt Musik zu hören?", answer: "Aber natürlich. Das Boot verfügt über eine Musikanlage – und unser Kapitän ist nicht nur Steuermann, sondern auch DJ. Musikwünsche nehmen wir gerne entgegen – von Chill-Vibes bis Sommerklassiker." }
       ]
+    },
+    footer: {
+      imprint: "Impressum",
+      privacy: "Datenschutz",
+      terms: "Nutzungsbedingungen"
+    },
+    legal: {
+      imprint: {
+        title: "Impressum",
+        content: `**Angaben gemäß Zakon o elektroničkoj trgovini (Artikel 6)**
+
+**Inhaberin:**
+Sanja Markovac
+
+**Gewerbe:**
+Obrt za usluge, pomorski i obalni prijevoz putnika
+
+**Anschrift:**
+Omladinska 1 A
+51550 Mali Lošinj
+Hrvatska (Kroatien)
+
+**OIB (Persönliche Identifikationsnummer):**
+99474585958
+
+**Kontakt:**
+E-Mail: animamaris.adriatic@gmail.com
+Telefon: +385 97 7119 736
+
+**Zuständige Aufsichtsbehörde:**
+Lučka kapetanija Mali Lošinj (Hafenkapitänamt Mali Lošinj)`
+      },
+      privacy: {
+        title: "Datenschutzerklärung",
+        content: `**Datenschutzerklärung gemäß DSGVO**
+
+**1. Verantwortlicher**
+Sanja Markovac
+Obrt za usluge, pomorski i obalni prijevoz putnika
+Omladinska 1 A, 51550 Mali Lošinj, Kroatien
+E-Mail: animamaris.adriatic@gmail.com
+Telefon: +385 97 7119 736
+
+**2. Erhobene Daten**
+Über das Kontaktformular erheben wir:
+- Name
+- E-Mail-Adresse
+- Telefonnummer (optional)
+- Ihre Nachricht
+
+**3. Zweck der Datenverarbeitung**
+Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+
+**4. Rechtsgrundlage**
+Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung).
+
+**5. Drittanbieter**
+- **EmailJS:** Zum Versand von Kontaktanfragen per E-Mail (emailjs.com)
+- **Google Fonts:** Zum Laden von Schriftarten (fonts.google.com)
+- **GitHub Pages:** Hosting-Anbieter (pages.github.com)
+
+**6. Cookies**
+Diese Website verwendet nur technisch notwendige Funktionen. Es werden keine Tracking-Cookies verwendet.
+
+**7. Speicherdauer**
+Ihre Anfragedaten werden nach Abschluss der Bearbeitung gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
+
+**8. Ihre Rechte**
+Sie haben das Recht auf:
+- Auskunft über Ihre gespeicherten Daten
+- Berichtigung unrichtiger Daten
+- Löschung Ihrer Daten
+- Einschränkung der Verarbeitung
+- Datenübertragbarkeit
+- Widerspruch gegen die Verarbeitung
+
+**9. Beschwerderecht**
+Sie können sich bei der kroatischen Datenschutzbehörde (AZOP) beschweren:
+Agencija za zaštitu osobnih podataka
+Selska cesta 136, 10000 Zagreb
+www.azop.hr`
+      },
+      terms: {
+        title: "Nutzungsbedingungen",
+        content: `**Nutzungsbedingungen**
+
+**1. Geltungsbereich**
+Diese Nutzungsbedingungen gelten für die Nutzung der Website Robinson Boat Tours.
+
+**2. Anfragen**
+Anfragen über das Kontaktformular sind unverbindlich. Ein Vertrag kommt erst durch unsere ausdrückliche Bestätigung zustande.
+
+**3. Haftungsausschluss**
+Wir bemühen uns um aktuelle und korrekte Informationen. Für die Richtigkeit, Vollständigkeit und Aktualität übernehmen wir keine Gewähr.
+
+**4. Urheberrecht**
+Alle Inhalte dieser Website (Texte, Bilder, Grafiken) sind urheberrechtlich geschützt.
+
+**5. Anwendbares Recht**
+Es gilt kroatisches Recht.`
+      }
     }
   },
   en: {
@@ -274,12 +369,6 @@ export const content: Record<Language, Content> = {
       ],
       info: {
         includedTitle: "Included",
-        bringTitle: "What to bring",
-        bringText: "Swimwear, towel, sunscreen, hat, camera.",
-        foodTitle: "Food & Drink",
-        foodText: "Snacks and drinks included. Lunch can be arranged at island restaurants.",
-        kidsTitle: "Suitable for all",
-        kidsText: "Children and elderly guests are very welcome.",
         bookButton: "Book This Experience"
       }
     },
@@ -373,6 +462,108 @@ export const content: Record<Language, Content> = {
         { question: "Can you bring your own snacks and drinks?", answer: "Of course. Sun, salty air and sea are known to make you thirsty. Depending on the tour booked, a selection of drinks is already available on board – see tour details. You're welcome to bring additional drinks of your own." },
         { question: "Is it possible to listen to music during the trip?", answer: "Of course. The boat has a sound system – and our captain isn't just a helmsman, but also a DJ. We're happy to take music requests – from chill vibes to summer classics." }
       ]
+    },
+    footer: {
+      imprint: "Imprint",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use"
+    },
+    legal: {
+      imprint: {
+        title: "Imprint",
+        content: `**Information pursuant to Zakon o elektroničkoj trgovini (Article 6)**
+
+**Owner:**
+Sanja Markovac
+
+**Business:**
+Obrt za usluge, pomorski i obalni prijevoz putnika
+(Service trade, maritime and coastal passenger transport)
+
+**Address:**
+Omladinska 1 A
+51550 Mali Lošinj
+Croatia
+
+**OIB (Personal Identification Number):**
+99474585958
+
+**Contact:**
+Email: animamaris.adriatic@gmail.com
+Phone: +385 97 7119 736
+
+**Supervisory Authority:**
+Lučka kapetanija Mali Lošinj (Port Authority Mali Lošinj)`
+      },
+      privacy: {
+        title: "Privacy Policy",
+        content: `**Privacy Policy in accordance with GDPR**
+
+**1. Data Controller**
+Sanja Markovac
+Obrt za usluge, pomorski i obalni prijevoz putnika
+Omladinska 1 A, 51550 Mali Lošinj, Croatia
+Email: animamaris.adriatic@gmail.com
+Phone: +385 97 7119 736
+
+**2. Data Collected**
+Through the contact form, we collect:
+- Name
+- Email address
+- Phone number (optional)
+- Your message
+
+**3. Purpose of Data Processing**
+Your data is used exclusively to process your inquiry.
+
+**4. Legal Basis**
+Processing is based on Art. 6(1)(b) GDPR (contract initiation).
+
+**5. Third-Party Services**
+- **EmailJS:** For sending contact inquiries via email (emailjs.com)
+- **Google Fonts:** For loading fonts (fonts.google.com)
+- **GitHub Pages:** Hosting provider (pages.github.com)
+
+**6. Cookies**
+This website uses only technically necessary functions. No tracking cookies are used.
+
+**7. Data Retention**
+Your inquiry data will be deleted after processing is complete, unless legal retention requirements apply.
+
+**8. Your Rights**
+You have the right to:
+- Access your stored data
+- Rectification of inaccurate data
+- Erasure of your data
+- Restriction of processing
+- Data portability
+- Object to processing
+
+**9. Right to Complain**
+You may file a complaint with the Croatian Data Protection Agency (AZOP):
+Agencija za zaštitu osobnih podataka
+Selska cesta 136, 10000 Zagreb
+www.azop.hr`
+      },
+      terms: {
+        title: "Terms of Use",
+        content: `**Terms of Use**
+
+**1. Scope**
+These terms of use apply to the use of the Robinson Boat Tours website.
+
+**2. Inquiries**
+Inquiries via the contact form are non-binding. A contract is only concluded upon our express confirmation.
+
+**3. Disclaimer**
+We strive to provide current and accurate information. We assume no liability for the accuracy, completeness, or timeliness of the content.
+
+**4. Copyright**
+All content on this website (texts, images, graphics) is protected by copyright.
+
+**5. Applicable Law**
+Croatian law applies.`
+      }
     }
   },
   hr: {
@@ -461,12 +652,6 @@ export const content: Record<Language, Content> = {
       ],
       info: {
         includedTitle: "Uključeno",
-        bringTitle: "Što ponijeti",
-        bringText: "Kupaći kostim, ručnik, krema za sunčanje, kapa, kamera.",
-        foodTitle: "Hrana i piće",
-        foodText: "Grickalice i piće uključeni. Ručak se može organizirati u restoranima na otocima.",
-        kidsTitle: "Prikladno za sve",
-        kidsText: "Djeca i stariji gosti su dobrodošli.",
         bookButton: "Rezerviraj doživljaj"
       }
     },
@@ -560,6 +745,107 @@ export const content: Record<Language, Content> = {
         { question: "Mogu li se ponijeti vlastite grickalice i pića?", answer: "Naravno. Sunce, slani zrak i more poznato izazivaju žeđ. Ovisno o odabranoj turi, određena količina pića već je dostupna na brodu – pogledajte detalje ture. Dodatna vlastita pića možete slobodno ponijeti." },
         { question: "Je li moguće slušati glazbu tijekom vožnje?", answer: "Naravno. Brod ima glazbenu opremu – a naš kapetan nije samo kormilar, već i DJ. Rado primamo glazbene želje – od opuštenih vibri do ljetnih klasika." }
       ]
+    },
+    footer: {
+      imprint: "Impresum",
+      privacy: "Politika privatnosti",
+      terms: "Uvjeti korištenja"
+    },
+    legal: {
+      imprint: {
+        title: "Impresum",
+        content: `**Podaci sukladno Zakonu o elektroničkoj trgovini (Članak 6)**
+
+**Vlasnica:**
+Sanja Markovac
+
+**Djelatnost:**
+Obrt za usluge, pomorski i obalni prijevoz putnika
+
+**Adresa:**
+Omladinska 1 A
+51550 Mali Lošinj
+Hrvatska
+
+**OIB (Osobni identifikacijski broj):**
+99474585958
+
+**Kontakt:**
+E-mail: animamaris.adriatic@gmail.com
+Telefon: +385 97 7119 736
+
+**Nadležno tijelo:**
+Lučka kapetanija Mali Lošinj`
+      },
+      privacy: {
+        title: "Politika privatnosti",
+        content: `**Politika privatnosti sukladno GDPR-u**
+
+**1. Voditelj obrade**
+Sanja Markovac
+Obrt za usluge, pomorski i obalni prijevoz putnika
+Omladinska 1 A, 51550 Mali Lošinj, Hrvatska
+E-mail: animamaris.adriatic@gmail.com
+Telefon: +385 97 7119 736
+
+**2. Prikupljeni podaci**
+Putem obrasca za kontakt prikupljamo:
+- Ime
+- E-mail adresu
+- Broj telefona (opcionalno)
+- Vašu poruku
+
+**3. Svrha obrade podataka**
+Vaši podaci koriste se isključivo za obradu vašeg upita.
+
+**4. Pravna osnova**
+Obrada se temelji na čl. 6. st. 1. t. b) GDPR-a (predugovorna radnja).
+
+**5. Treće strane**
+- **EmailJS:** Za slanje upita putem e-maila (emailjs.com)
+- **Google Fonts:** Za učitavanje fontova (fonts.google.com)
+- **GitHub Pages:** Pružatelj usluge hostinga (pages.github.com)
+
+**6. Kolačići**
+Ova web stranica koristi samo tehnički nužne funkcije. Ne koriste se kolačići za praćenje.
+
+**7. Razdoblje pohrane**
+Vaši podaci iz upita bit će izbrisani nakon završetka obrade, osim ako postoje zakonske obveze čuvanja.
+
+**8. Vaša prava**
+Imate pravo na:
+- Pristup pohranjenim podacima
+- Ispravak netočnih podataka
+- Brisanje podataka
+- Ograničenje obrade
+- Prenosivost podataka
+- Prigovor na obradu
+
+**9. Pravo na pritužbu**
+Možete podnijeti pritužbu hrvatskoj Agenciji za zaštitu osobnih podataka (AZOP):
+Agencija za zaštitu osobnih podataka
+Selska cesta 136, 10000 Zagreb
+www.azop.hr`
+      },
+      terms: {
+        title: "Uvjeti korištenja",
+        content: `**Uvjeti korištenja**
+
+**1. Područje primjene**
+Ovi uvjeti korištenja primjenjuju se na korištenje web stranice Robinson Boat Tours.
+
+**2. Upiti**
+Upiti putem obrasca za kontakt su neobvezujući. Ugovor se sklapa tek našom izričitom potvrdom.
+
+**3. Odricanje od odgovornosti**
+Trudimo se pružiti aktualne i točne informacije. Ne preuzimamo odgovornost za točnost, potpunost ili aktualnost sadržaja.
+
+**4. Autorska prava**
+Svi sadržaji na ovoj web stranici (tekstovi, slike, grafike) zaštićeni su autorskim pravom.
+
+**5. Mjerodavno pravo**
+Primjenjuje se hrvatsko pravo.`
+      }
     }
   },
   it: {
@@ -648,12 +934,6 @@ export const content: Record<Language, Content> = {
       ],
       info: {
         includedTitle: "Incluso",
-        bringTitle: "Cosa portare",
-        bringText: "Costume, asciugamano, protezione solare, cappello, macchina fotografica.",
-        foodTitle: "Cibo e bevande",
-        foodText: "Snack e bevande inclusi. Il pranzo può essere organizzato nei ristoranti delle isole.",
-        kidsTitle: "Adatto a tutti",
-        kidsText: "Bambini e ospiti anziani sono i benvenuti.",
         bookButton: "Prenota l'esperienza"
       }
     },
@@ -747,6 +1027,108 @@ export const content: Record<Language, Content> = {
         { question: "Si possono portare snack e bevande proprie?", answer: "Certamente. Sole, aria salata e mare notoriamente fanno venire sete. A seconda del tour prenotato, una selezione di bevande è già disponibile a bordo – vedi dettagli tour. Siete liberi di portare ulteriori bevande." },
         { question: "È possibile ascoltare musica durante il viaggio?", answer: "Naturalmente. La barca ha un impianto audio – e il nostro capitano non è solo timoniere, ma anche DJ. Accettiamo volentieri richieste musicali – dalle vibes rilassanti ai classici estivi." }
       ]
+    },
+    footer: {
+      imprint: "Impronta",
+      privacy: "Privacy Policy",
+      terms: "Termini di utilizzo"
+    },
+    legal: {
+      imprint: {
+        title: "Impronta",
+        content: `**Informazioni ai sensi dello Zakon o elektroničkoj trgovini (Articolo 6)**
+
+**Titolare:**
+Sanja Markovac
+
+**Attività:**
+Obrt za usluge, pomorski i obalni prijevoz putnika
+(Attività di servizi, trasporto marittimo e costiero di passeggeri)
+
+**Indirizzo:**
+Omladinska 1 A
+51550 Mali Lošinj
+Croazia
+
+**OIB (Codice di Identificazione Personale):**
+99474585958
+
+**Contatto:**
+E-mail: animamaris.adriatic@gmail.com
+Telefono: +385 97 7119 736
+
+**Autorità di vigilanza:**
+Lučka kapetanija Mali Lošinj (Capitaneria di Porto Mali Lošinj)`
+      },
+      privacy: {
+        title: "Privacy Policy",
+        content: `**Informativa sulla privacy ai sensi del GDPR**
+
+**1. Titolare del trattamento**
+Sanja Markovac
+Obrt za usluge, pomorski i obalni prijevoz putnika
+Omladinska 1 A, 51550 Mali Lošinj, Croazia
+E-mail: animamaris.adriatic@gmail.com
+Telefono: +385 97 7119 736
+
+**2. Dati raccolti**
+Tramite il modulo di contatto raccogliamo:
+- Nome
+- Indirizzo e-mail
+- Numero di telefono (opzionale)
+- Il tuo messaggio
+
+**3. Finalità del trattamento**
+I tuoi dati vengono utilizzati esclusivamente per elaborare la tua richiesta.
+
+**4. Base giuridica**
+Il trattamento si basa sull'art. 6, par. 1, lett. b) GDPR (misure precontrattuali).
+
+**5. Fornitori terzi**
+- **EmailJS:** Per l'invio di richieste via e-mail (emailjs.com)
+- **Google Fonts:** Per il caricamento dei font (fonts.google.com)
+- **GitHub Pages:** Provider di hosting (pages.github.com)
+
+**6. Cookie**
+Questo sito web utilizza solo funzioni tecnicamente necessarie. Non vengono utilizzati cookie di tracciamento.
+
+**7. Periodo di conservazione**
+I dati della tua richiesta verranno cancellati dopo il completamento dell'elaborazione, salvo obblighi legali di conservazione.
+
+**8. I tuoi diritti**
+Hai diritto a:
+- Accesso ai dati memorizzati
+- Rettifica di dati inesatti
+- Cancellazione dei dati
+- Limitazione del trattamento
+- Portabilità dei dati
+- Opposizione al trattamento
+
+**9. Diritto di reclamo**
+Puoi presentare un reclamo all'Agenzia croata per la protezione dei dati personali (AZOP):
+Agencija za zaštitu osobnih podataka
+Selska cesta 136, 10000 Zagabria
+www.azop.hr`
+      },
+      terms: {
+        title: "Termini di utilizzo",
+        content: `**Termini di utilizzo**
+
+**1. Ambito di applicazione**
+I presenti termini di utilizzo si applicano all'uso del sito web Robinson Boat Tours.
+
+**2. Richieste**
+Le richieste tramite il modulo di contatto non sono vincolanti. Un contratto si conclude solo con la nostra conferma espressa.
+
+**3. Esclusione di responsabilità**
+Ci impegniamo a fornire informazioni aggiornate e accurate. Non assumiamo alcuna responsabilità per l'accuratezza, la completezza o l'attualità del contenuto.
+
+**4. Diritti d'autore**
+Tutti i contenuti di questo sito web (testi, immagini, grafiche) sono protetti da copyright.
+
+**5. Legge applicabile**
+Si applica la legge croata.`
+      }
     }
   }
 };

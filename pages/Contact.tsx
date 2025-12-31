@@ -98,9 +98,9 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">{content.subtitle}</p>
         </div>
 
-        <div className="grid xl:grid-cols-[2fr_3fr] gap-6 lg:gap-8 xl:gap-12 items-start">
+        <div className="grid xl:grid-cols-[2fr_3fr] gap-6 lg:gap-8 xl:gap-12">
           {/* Left Column - Image and Contact Info Stacked */}
-          <div className="flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-col gap-6">
+          <div className="flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-col gap-6 xl:h-full">
             {/* Google Maps Embed */}
             <div className="rounded-2xl overflow-hidden h-80 md:h-72 lg:h-80 xl:h-[380px]">
               <iframe
@@ -116,7 +116,7 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
             </div>
 
             {/* Contact Info Card */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 xl:flex-1">
               <h3 className="font-serif text-xl font-bold text-sea-950 mb-4">{content.info.direct}</h3>
               <div className="space-y-4">
                 <a href={`tel:${content.info.phone1.replace(/\s/g, '')}`} className="flex items-center group">
