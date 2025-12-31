@@ -97,7 +97,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* WhatsApp Card */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
                   <div className="flex items-start">
                     <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
                       <MessageCircle className="w-5 h-5" />
@@ -114,7 +114,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 </div>
 
                 {/* Email Card */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
                   <div className="flex items-start">
                     <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
                       <Mail className="w-5 h-5" />
@@ -129,7 +129,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 </div>
 
                 {/* Location Card - Full Width */}
-                <div className="sm:col-span-2 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
+                <div className="sm:col-span-2 bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-300 group">
                   <div className="flex items-start">
                     <div className="bg-white/10 p-2.5 rounded-lg text-white/60 group-hover:bg-white/20 group-hover:text-white transition-colors">
                       <MapPin className="w-5 h-5" />

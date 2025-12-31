@@ -57,7 +57,7 @@ const Destinations: React.FC<DestinationsProps> = ({ content }) => {
                 </p>
 
                 {/* Highlights */}
-                <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm">
+                <div className="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm">
                   <h4 className="font-semibold text-sea-900 mb-4 uppercase tracking-wide text-sm">Highlights</h4>
                   <ul className="space-y-3">
                     {destination.highlights.map((highlight, i) => (

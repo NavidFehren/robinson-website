@@ -23,7 +23,7 @@ const Tours: React.FC<ToursProps> = ({ content, openContact }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12">
           {content.items.map((tour) => (
-            <div key={tour.id} className="bg-white rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 flex flex-col xl:flex-row group transition-all hover:shadow-2xl hover:border-sea-100">
+            <div key={tour.id} className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col xl:flex-row group transition-all hover:shadow-2xl hover:border-sea-100">
               {/* Image Side */}
               <div className="xl:w-2/5 relative h-64 md:h-72 xl:h-auto overflow-hidden">
                 <img

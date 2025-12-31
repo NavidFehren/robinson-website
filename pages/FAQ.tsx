@@ -20,7 +20,7 @@ const FAQ: React.FC<FAQProps> = ({ title, faqs, ctaSubtitle, ctaButton, onScroll
   const FaqCard = ({ faq, idx }: { faq: FaqItem; idx: number }) => {
     const isOpen = openIndex === idx;
     return (
-      <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+      <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
         <button
           onClick={() => toggleFaq(idx)}
           className="w-full px-6 py-5 flex items-center justify-between text-left"

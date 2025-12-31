@@ -116,7 +116,7 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
             </div>
 
             {/* Contact Info Card */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 xl:flex-1">
+            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 xl:flex-1">
               <h3 className="font-serif text-xl font-bold text-sea-950 mb-4">{content.info.direct}</h3>
               <div className="space-y-4">
                 <a href="https://wa.me/385977119736" target="_blank" rel="noopener noreferrer" className="flex items-center group">
@@ -151,7 +151,7 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
           </div>
 
           {/* Right Column - Form */}
-          <div className="bg-white p-8 lg:p-10 rounded-3xl shadow-2xl border border-gray-100">
+          <div className="bg-white p-8 lg:p-10 rounded-2xl shadow-2xl border border-gray-100">
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-16">
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 animate-bounce">
