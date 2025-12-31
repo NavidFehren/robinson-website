@@ -87,9 +87,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Primary gradient for buttons and cards */
 .gradient-primary {
-  background: linear-gradient(to bottom right, var(--color-sea-600), var(--color-sea-700), var(--color-sea-900));
+  background: linear-gradient(to bottom, var(--color-sea-950), var(--color-sea-900));
 }
 
 .gradient-primary:hover {
-  background: linear-gradient(to bottom right, var(--color-sea-500), var(--color-sea-600), var(--color-sea-800));
+  background: linear-gradient(to bottom, var(--color-sea-900), var(--color-sea-800));
 }

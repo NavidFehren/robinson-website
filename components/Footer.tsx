@@ -24,7 +24,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
       </div>
 
       {/* Main Footer */}
-      <footer className="bg-gradient-to-b from-sea-950 to-sea-900 text-white pt-12 pb-8 -mt-px">
+      <footer className="gradient-primary text-white pt-12 pb-8 -mt-px">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12 mb-12">
 
