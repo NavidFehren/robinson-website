@@ -40,7 +40,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
                 </div>
                 <div>
                   <span className="font-serif text-xl font-bold block">ROBINSON</span>
-                  <span className="text-white/60 text-xs uppercase tracking-widest">Boat Tours</span>
+                  <span className="text-white/60 text-xs uppercase tracking-widest">Boat Tours • Mali Lošinj</span>
                 </div>
               </div>
               <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-md">
