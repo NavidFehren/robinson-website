@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Content, Tour } from '../types';
 import { content as allContent } from '../content';
+import { track } from '../utils/analytics';
 import { Phone, Mail, Send, ChevronDown, Loader2, MessageCircle } from 'lucide-react';
 
 interface ContactProps {
@@ -77,6 +78,7 @@ const Contact: React.FC<ContactProps> = ({ content, tours }) => {
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
+      track('contact_submitted', { tourType: formData.tourType, guests: formData.guests });
       setSubmitted(true);
     } catch (err) {
       setError(content.form.error || 'Failed to send. Please try again or contact us directly.');

@@ -10,13 +10,20 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import { content } from './content';
 import { useLanguage } from './hooks/useLanguage';
+import { useSectionTracking } from './hooks/useSectionTracking';
+import { track } from './utils/analytics';
+
+const TRACKED_SECTIONS = ['home', 'tours', 'destinations', 'about', 'gallery', 'contact'];
 
 function App() {
   const { lang, setLang } = useLanguage();
-  
+
   const currentContent = content[lang];
 
+  useSectionTracking(TRACKED_SECTIONS);
+
   const scrollToSection = (id: string) => {
+    track('section_navigate', { section: id });
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

@@ -7,6 +7,7 @@ import {
   updateHtmlLang,
   getLanguageFromUrl,
 } from '../utils/language';
+import { track } from '../utils/analytics';
 
 export function useLanguage() {
   // Initialize with a function to compute initial state only once
@@ -35,6 +36,7 @@ export function useLanguage() {
     setLangState(newLang);
     saveLanguage(newLang);
     updateUrlLanguage(newLang);
+    track('language_changed', { language: newLang });
   }, []);
 
   return { lang, setLang };
